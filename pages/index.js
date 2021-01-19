@@ -1,8 +1,11 @@
 import Link from "next/link";
+import WhatsAppFAB from '../components/WhatsAppFAB'
 
 export default function Home() {
   return (
     <>
+      <WhatsAppFAB />
+
       <main id="main" className="grid grid-cols-1 lg:grid-cols-7 gap-6 min-h-screen">
         <div className="flex flex-col justify-center space-y-6 col-span-4 text-2xl md:text-3xl font-bold">
           <div className="flex items-center space-x-4">
@@ -29,7 +32,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
-            <img className="mr-2 inline-block" width="40" height="40" src="/hi.png" alt="Hi Emoji"/>
+            <img className="mr-2 inline-block align-middle" width="40" height="40" src="/hi.png" alt="Hi Emoji"/>
             Hi there, I'm Ruan.
           </div>
           <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
@@ -37,7 +40,7 @@ export default function Home() {
           </div>
           <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
             Scroll up and let me perform better
-            <img className="ml-2 inline-block" width="40" height="40" src="/smile.png" alt="Smile Emoji"/>
+            <img className="ml-2 inline-block align-middle" width="40" height="40" src="/smile.png" alt="Smile Emoji"/>
           </div>
         </div>
 
@@ -46,13 +49,21 @@ export default function Home() {
         </div>
       </main>
 
-      <section className="my-8 space-y-12">
+      <section className="p-5 shadow-lg rounded-md fit-content leading-snug">
+        <img className="mr-2 inline-block align-middle" width="25" height="25" src="/heart.png" alt="Heart Emoji"/>
+        9 people liked my work. Did you like it too?{' '}
+        <button className="text-red-600 font-bold focus:outline-none">
+          Touch here
+        </button>
+      </section>
+
+      <section className="my-20 space-y-12">
         <h1 className="text-2xl md:text-4xl font-extrabold relative">
           About me
         </h1>
 
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 text-lg md:text-xl leading-relaxed font-medium">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 text-lg md:text-xl leading-relaxed font-medium text-justify">
           <p className="md:col-start-1">
             I'm 18 years old, I graduated with a computer technician and I study Information Systems at Uniasselvi in ​​Blumenau-SC. 
             In addition, I am always studying web and mobile development in my spare time, because I love it.
@@ -75,7 +86,7 @@ export default function Home() {
         </h1>
 
 
-        <ul className="flex flex-wrap items-center justify-end gap-4 md:gap-10 leading-relaxed font-bold text-lg md:text-xl list-none">
+        <ul className="flex flex-wrap lg:grid lg:grid-cols-5 items-center justify-center gap-4 md:gap-10 leading-relaxed font-bold text-lg md:text-xl list-none">
           <li>
             <img className="w-28 md:w-40" src="/nodejs.svg" alt="Node.js"/>
             <legend className="text-center">Node.js</legend>
@@ -125,7 +136,7 @@ export default function Home() {
         </h1>
 
 
-        <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 leading-relaxed font-bold text-lg md:text-xl list-none">
+        <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 leading-relaxed font-medium text-lg md:text-xl list-none text-justify">
           <li className="relative pl-12">
             <img className="absolute -left-4 -top-14 md:-top-18 lg:-left-12 lg:-top-28 xl:-left-12 xl:-top-2/4 w-28 lg:w-52 opacity-20" src="/philips.svg" alt="Philips Logo"/>
             <h2 className="text-3xl font-extrabold mb-5">Philips</h2>
