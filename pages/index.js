@@ -44,7 +44,7 @@ export default function Home() {
       <section className="my-8 space-y-12">
         <h1 className="text-2xl md:text-4xl font-extrabold relative">
           About me
-          <hr className="border md:border-2 border-gray-900 w-2/6 mt-1"/>
+          <hr className="border md:border-2 bg-gray-900 border-gray-900 w-2/6 mt-1"/>
         </h1>
 
 
@@ -68,11 +68,11 @@ export default function Home() {
       <section className="my-28 space-y-12 flex flex-col items-end">
         <h1 className="text-2xl md:text-4xl font-extrabold relative w-full text-right">
           My skills
-          <hr className="border md:border-2 border-gray-900 w-2/6 mt-1 ml-auto"/>
+          <hr className="border md:border-2 bg-gray-900 border-gray-900 w-2/6 mt-1 ml-auto"/>
         </h1>
 
 
-        <ul className="flex flex-wrap items-center justify-end gap-10 leading-relaxed font-bold text-lg md:text-xl list-none">
+        <ul className="flex flex-wrap items-center justify-end gap-4 md:gap-10 leading-relaxed font-bold text-lg md:text-xl list-none">
           <li>
             <img className="w-28 md:w-40" src="/nodejs.svg"/>
             <legend className="text-center">Node.js</legend>
