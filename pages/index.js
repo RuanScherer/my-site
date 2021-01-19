@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <main className="grid grid-cols-1 lg:grid-cols-7 gap-6 min-h-screen">
+      <main id="main" className="grid grid-cols-1 lg:grid-cols-7 gap-6 min-h-screen">
         <div className="flex flex-col justify-center space-y-6 col-span-4 text-2xl md:text-3xl font-bold">
           <div className="flex items-center space-x-4">
             <img className="rounded-full" width="80" height="80" src="/me.jpeg"/>

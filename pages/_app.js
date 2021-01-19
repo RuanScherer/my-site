@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from "../components/Header";
 import "tailwindcss/tailwind.css";
+import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <div className="container px-5 sm:mx-auto my-4">
         <Component {...pageProps}/>
+        <Footer/>
       </div>
     </>
   )
