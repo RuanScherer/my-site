@@ -22,6 +22,11 @@ export default function Home() {
                 <img className="cursor-pointer hover:opacity-75 transition" width="30" height="30" src="/github.svg" alt="GitHub"/>
               </a>
             </Link>
+            <Link href="/Ruan-Scherer.pdf">
+              <a target="_blank" title="Curriculum">
+                <img className="cursor-pointer hover:opacity-75 transition" width="30" height="30" src="/document.png" alt="Curriculum"/>
+              </a>
+            </Link>
           </div>
           <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
             <img className="mr-2 inline-block" width="40" height="40" src="/hi.png" alt="Hi Emoji"/>

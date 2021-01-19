@@ -20,6 +20,11 @@ const Footer = () => {
             <img className="cursor-pointer hover:opacity-75 transition" width="30" height="30" src="/github.svg" alt="GitHub"/>
           </a>
         </Link>
+        <Link href="/Ruan-Scherer.pdf">
+          <a target="_blank" title="Curriculum">
+            <img className="cursor-pointer hover:opacity-75 transition" width="30" height="30" src="/document.png" alt="Curriculum"/>
+          </a>
+        </Link>
       </nav>
       <Link href="#main">
         <a className="hover:text-secondary transition duration-200">Back to top</a>
