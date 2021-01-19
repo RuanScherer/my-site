@@ -1,7 +1,31 @@
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import WhatsAppFAB from '../components/WhatsAppFAB'
 
 export default function Home() {
+  const [liked, setLiked] = useState(false)
+  const [likes, setLikes] = useState(0)
+
+  useEffect(() => {
+    setLiked(localStorage.getItem("liked"))
+    
+    fetch('http://localhost:3000/api/like')
+      .then(response => response.json())
+      .then(data => {
+        setLikes(data.likes)
+      })
+  })
+
+  function handleLike() {
+    fetch('http://localhost:3000/api/like', { method: 'POST' })
+      .then(response => {
+        if (response.status === 200) {
+          localStorage.setItem("liked", true)
+          setLiked(true)
+        }
+      })
+  }
+
   return (
     <>
       <WhatsAppFAB />
@@ -49,13 +73,18 @@ export default function Home() {
         </div>
       </main>
 
-      <section className="p-5 shadow-lg rounded-md fit-content leading-snug">
-        <img className="mr-2 inline-block align-middle" width="25" height="25" src="/heart.png" alt="Heart Emoji"/>
-        9 people liked my work. Did you like it too?{' '}
-        <button className="text-red-600 font-bold focus:outline-none">
-          Touch here
-        </button>
-      </section>
+      { likes ? 
+        <section className="p-5 shadow-lg rounded-md fit-content leading-snug">
+          <img className="mr-2 inline-block align-middle" width="25" height="25" src="/heart.png" alt="Heart Emoji"/>
+          {likes} people liked my work so far. { !liked && ' Did you like it too?' } 
+          { !liked &&
+            <button className="ml-2 text-red-600 font-bold focus:outline-none" onClick={handleLike}>
+              Touch here
+            </button>
+          }
+        </section>
+        : ''
+      }
 
       <section className="my-20 space-y-12">
         <h1 className="text-2xl md:text-4xl font-extrabold relative">
