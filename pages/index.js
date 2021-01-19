@@ -120,7 +120,7 @@ export default function Home() {
       </section>
 
       <section className="my-28 space-y-12 flex flex-col">
-        <h1 className="text-2xl md:text-4xl font-extrabold relative w-full mb-20">
+        <h1 className="text-2xl md:text-4xl font-extrabold relative w-full mb-8 lg:mb-20">
           Where I worked
         </h1>
 

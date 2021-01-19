@@ -27,7 +27,9 @@ const Footer = () => {
         </Link>
       </nav>
       <Link href="#main">
-        <a className="hover:text-secondary transition duration-200">Back to top</a>
+        <a className="text-lg border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">
+          Back to top
+        </a>
       </Link>
     </footer>
   )
