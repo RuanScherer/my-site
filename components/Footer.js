@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between items-center pt-5 pb-12">
+    <footer className="flex justify-between items-center pt-5 pb-12 mt-36">
       <nav className="flex items-center space-x-4">
         <img className="rounded-full" width="50" height="50" src="/me.jpeg"/>
         <Link href="https://www.instagram.com/ruan.scherer/">

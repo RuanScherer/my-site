@@ -60,7 +60,7 @@ export default function Home() {
           </button>
       </section>
 
-      <section className="my-20 space-y-12">
+      <section id="about-me" className="pt-36 space-y-12">
         <h1 className="text-2xl md:text-4xl font-extrabold relative">
           About me
         </h1>
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="my-28 space-y-12 flex flex-col items-end">
+      <section id="skills" className="pt-52 space-y-12 flex flex-col items-end">
         <h1 className="text-2xl md:text-4xl font-extrabold relative w-full text-right">
           My skills
         </h1>
@@ -133,7 +133,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="my-28 space-y-12 flex flex-col">
+      <section id="where-i-worked" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-2xl md:text-4xl font-extrabold relative w-full mb-8 lg:mb-20">
           Where I worked
         </h1>
@@ -157,6 +157,7 @@ export default function Home() {
             </p>
           </li>
           <li className="relative pl-12">
+          <img className="absolute -left-0 -top-5 lg:-left-6 lg:-top-6 w-28 lg:w-40 opacity-30" src="/logo.svg" alt="My logo"/>
             <h2 className="text-3xl font-extrabold mb-5">Freelance</h2>
             <p>
               Before I started working in any company, I developed small websites for businesses in order to obtain exercise.
@@ -165,7 +166,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="my-28 space-y-12 flex flex-col">
+      <section id="say-about-me" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-center text-2xl md:text-4xl font-extrabold relative w-full mb-8 lg:mb-20">
           What people say about me
         </h1>
@@ -205,7 +206,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="my-28 space-y-12 flex flex-col">
+      <section id="awards-recognition" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-center text-2xl md:text-4xl font-extrabold relative w-full lg:mb-10">
           Awards and Recognition
         </h1>
@@ -263,7 +264,7 @@ export default function Home() {
 
         { !seeMoreAwardsAndRecongition &&
           <button 
-            className="lg:hidden text-primary text-xl font-bold shadow-lg fit-content mx-auto px-5 py-2 transform transition hover:translate-y-1 hover:shadow-md hover:bg-gray-50"
+            className="lg:hidden text-primary text-xl font-bold shadow-lg rounded-sm fit-content mx-auto px-5 py-2 transform transition hover:translate-y-1 hover:shadow-md hover:bg-gray-50"
             onClick={() => setSeeMoreAwardsAndRecongition(true)}>
             See more
           </button>
