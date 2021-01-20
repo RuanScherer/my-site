@@ -202,6 +202,63 @@ export default function Home() {
           </li>
         </ul>
       </section>
+
+      <section className="my-28 space-y-12 flex flex-col">
+        <h1 className="text-center text-2xl md:text-4xl font-extrabold relative w-full lg:mb-10">
+          Awards and Recognition
+        </h1>
+
+        <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 font-medium text-lg md:text-xl list-none">
+          <li className="relative pl-12 mt-8 lg:mt-10">
+            <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
+            <h2 className="text-3xl font-extrabold">Revelation Project</h2>
+            <span className="text-gray-600">Comunidade Hackathon Shift</span>
+            <p className="leading-relaxed text-justify mt-5">
+              My teams and I were awarded in the category of Revelation Projects of the year with OpaFood and Konectando projects.
+            </p>
+          </li>
+          <li className="relative pl-12 mt-8 lg:mt-10">
+            <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
+            <h2 className="text-3xl font-extrabold">Top 3</h2>
+            <span className="text-gray-600">NASA Space Apps COVID-19 Challenge</span>
+            <p className="leading-relaxed text-justify mt-5">
+              We developed a project that was among the 3 finalists of the NASA Space Apps COVID-19 Challenge "The Isolation Solution" challenge.
+            </p>
+          </li>
+          <li className="relative pl-12 mt-8 lg:mt-10">
+            <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
+            <h2 className="text-3xl font-extrabold">Connecty Pay Challenge Winner</h2>
+            <span className="text-gray-600">Hack Pela Gastronomia</span>
+            <p className="leading-relaxed text-justify mt-5">
+            We have developed a complete solution for restaurants thinking about user experience, safety during pandemic times, sustainability and agility.
+            </p>
+          </li>
+          <li className="relative pl-12 mt-8 lg:mt-10">
+            <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
+            <h2 className="text-3xl font-extrabold">Second Place</h2>
+            <span className="text-gray-600">Inter Hack Shift</span>
+            <p className="leading-relaxed text-justify mt-5">
+              With a sustainable and accessible electronic point project, my team and I reached second place in this hackathon.
+            </p>
+          </li>
+          <li className="relative pl-12 mt-8 lg:mt-10">
+            <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
+            <h2 className="text-3xl font-extrabold">Maximum Grade</h2>
+            <span className="text-gray-600">Final Paper</span>
+            <p className="leading-relaxed text-justify mt-5">
+              I obtained maximum grade in my final paper of the computer technician course.
+            </p>
+          </li>
+          <li className="relative pl-12 mt-8 lg:mt-10">
+            <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
+            <h2 className="text-3xl font-extrabold">Winner</h2>
+            <span className="text-gray-600">Hackathon Shift Smart Cities</span>
+            <p className="leading-relaxed text-justify mt-5">
+              This was my first hackathon, where I developed a small solution with the team to track stolen vehicles.
+            </p>
+          </li>
+        </ul>
+      </section>
     </>
   )
 }
