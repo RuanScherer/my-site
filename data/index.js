@@ -2,31 +2,31 @@ export const skills = [
   {
     name: 'Node.js',
     image: 'nodejs.svg',
-    level: 81,
+    level: 77,
     color: '#8CC84B'
   },
   {
     name: 'Typescript',
     image: 'typescript.svg',
-    level: 85,
+    level: 79,
     color: '#007ACC'
   },
   {
     name: 'React',
     image: 'react.svg',
-    level: 79,
+    level: 76,
     color: '#61DAFB'
   },
   {
     name: 'Vue',
     image: 'vue.svg',
-    level: 48,
+    level: 44,
     color: '#4DBA87'
   },
   {
     name: 'HTML & CSS',
     image: 'htmlcss.svg',
-    level: 82,
+    level: 80,
     color: '#E44D26'
   },
   {
@@ -38,7 +38,7 @@ export const skills = [
   {
     name: 'GIT',
     image: 'git.svg',
-    level: 78,
+    level: 71,
     color: '#DE4C36'
   },
   {

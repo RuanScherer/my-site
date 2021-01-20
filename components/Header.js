@@ -35,6 +35,9 @@ const Header = () => {
         <Link href="#awards-recognition">
           <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Awards and Recognition</a>
         </Link>
+        <Link href="#projects">
+          <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Projects</a>
+        </Link>
       </nav>
 
       <button className="lg:hidden" onClick={() => setShowMenu(true)}>
@@ -60,6 +63,9 @@ const Header = () => {
           </Link>
           <Link href="#awards-recognition">
             <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Awards and Recognition</a>
+          </Link>
+          <Link href="#projects">
+            <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Projects</a>
           </Link>
         </nav>
       }
