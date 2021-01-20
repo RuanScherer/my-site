@@ -1,8 +1,10 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import WhatsAppFAB from '../components/WhatsAppFAB'
 
 export default function Home() {
+  const [seeMoreAwardsAndRecongition, setSeeMoreAwardsAndRecongition] = useState(false)
+
   return (
     <>
       <WhatsAppFAB />
@@ -233,7 +235,7 @@ export default function Home() {
             We have developed a complete solution for restaurants thinking about user experience, safety during pandemic times, sustainability and agility.
             </p>
           </li>
-          <li className="relative pl-12 mt-8 lg:mt-10">
+          <li className={`${!seeMoreAwardsAndRecongition && 'hidden'} lg:block relative pl-12 mt-8 lg:mt-10`}>
             <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
             <h2 className="text-3xl font-extrabold">Second Place</h2>
             <span className="text-gray-600">Inter Hack Shift</span>
@@ -241,7 +243,7 @@ export default function Home() {
               With a sustainable and accessible electronic point project, my team and I reached second place in this hackathon.
             </p>
           </li>
-          <li className="relative pl-12 mt-8 lg:mt-10">
+          <li className={`${!seeMoreAwardsAndRecongition && 'hidden'} lg:block relative pl-12 mt-8 lg:mt-10`}>
             <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
             <h2 className="text-3xl font-extrabold">Maximum Grade</h2>
             <span className="text-gray-600">Final Paper</span>
@@ -249,7 +251,7 @@ export default function Home() {
               I obtained maximum grade in my final paper of the computer technician course.
             </p>
           </li>
-          <li className="relative pl-12 mt-8 lg:mt-10">
+          <li className={`${!seeMoreAwardsAndRecongition && 'hidden'} lg:block relative pl-12 mt-8 lg:mt-10`}>
             <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
             <h2 className="text-3xl font-extrabold">Winner</h2>
             <span className="text-gray-600">Hackathon Shift Smart Cities</span>
@@ -258,6 +260,14 @@ export default function Home() {
             </p>
           </li>
         </ul>
+
+        { !seeMoreAwardsAndRecongition &&
+          <button 
+            className="lg:hidden text-primary text-xl font-bold shadow-lg fit-content mx-auto px-5 py-2 transform transition hover:translate-y-1 hover:shadow-md hover:bg-gray-50"
+            onClick={() => setSeeMoreAwardsAndRecongition(true)}>
+            See more
+          </button>
+        }
       </section>
     </>
   )
