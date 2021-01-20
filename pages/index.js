@@ -1,6 +1,7 @@
-import Link from "next/link";
-import { useState } from "react";
+import Link from "next/link"
+import { useState } from "react"
 import WhatsAppFAB from '../components/WhatsAppFAB'
+import { skills } from '../data/'
 
 export default function Home() {
   const [seeMoreAwardsAndRecongition, setSeeMoreAwardsAndRecongition] = useState(false)
@@ -89,47 +90,20 @@ export default function Home() {
         </h1>
 
 
-        <ul className="flex flex-wrap lg:grid lg:grid-cols-5 items-center justify-center gap-4 md:gap-10 leading-relaxed font-bold text-lg md:text-xl list-none">
-          <li>
-            <img className="w-28 md:w-40" src="/nodejs.svg" alt="Node.js"/>
-            <legend className="text-center">Node.js</legend>
-          </li>
-          <li>
-            <img className="w-28 md:w-40" src="/typescript.svg" alt="Typescript"/>
-            <legend className="text-center">Typescript</legend>
-          </li>
-          <li>
-            <img className="w-28 md:w-40" src="/react.svg" alt="React.js"/>
-            <legend className="text-center">React</legend>
-          </li>
-          <li>
-            <img className="w-28 md:w-40" src="/vue.svg" alt="Vue.js"/>
-            <legend className="text-center">Vue</legend>
-          </li>
-          <li>
-            <img className="w-28 md:w-40" src="/htmlcss.svg" alt="HTML and CSS"/>
-            <legend className="text-center">HTML {'&'} CSS</legend>
-          </li>
-          <li>
-            <img className="w-28 md:w-40" src="/java.svg" alt="Java"/>
-            <legend className="text-center">Java</legend>
-          </li>
-          <li>
-            <img className="w-28 md:w-40" src="/git.svg" alt="GIT"/>
-            <legend className="text-center">GIT</legend>
-          </li>
-          <li>
-            <img className="w-28 md:w-40" src="/docker.svg" alt="Docker"/>
-            <legend className="text-center">Docker</legend>
-          </li>
-          <li>
-            <img className="w-28 md:w-40" src="/nosql.svg" alt="NoSQL"/>
-            <legend className="text-center">NoSQL</legend>
-          </li>
-          <li>
-            <img className="w-28 md:w-40" src="/sql.svg" alt="SQL"/>
-            <legend className="text-center">SQL</legend>
-          </li>
+        <ul className="flex flex-wrap lg:grid lg:grid-cols-5 items-center justify-center gap-16 leading-relaxed font-bold text-lg md:text-xl list-none">
+          { skills.map(skill => (
+              <li>
+                <img className="w-28 md:w-40" src={`/${skill.image}`} alt={`/${skill.name}`}/>
+                <legend className="text-center">{skill.name}</legend>
+                <div className="flex items-center justify-between gap-2">
+                  <div className="bg-gray-100 h-3 w-full rounded-lg relative">
+                    <div className="absolute top-0 left-0 h-3 rounded-lg" style={{ width: skill.level + '%', backgroundColor: skill.color }}></div>
+                  </div>
+                  <small className="text-sm">{skill.level}%</small>
+                </div>
+              </li>
+            )
+          )}
         </ul>
       </section>
 
