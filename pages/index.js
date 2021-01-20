@@ -251,16 +251,16 @@ export default function Home() {
         </h1>
 
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 font-medium text-lg md:text-xl list-none">
-          <li className="p-8 mt-8 lg:mt-10 shadow-xl flex flex-col items-center justify-center hover:shadow-lg hover:translate-y-1 transform transition cursor-pointer">
-            <img width="180" className="mb-6" src="/konectando.svg" alt="Konectando logo"/>
+          <li className="p-8 mt-8 lg:mt-10 shadow-xl rounded-md flex flex-col items-center justify-center hover:shadow-lg hover:translate-y-1 transform transition cursor-pointer">
+            <img className="w-36 md:w-48 mb-6" src="/konectando.svg" alt="Konectando logo"/>
             <h2 className="text-2xl md:text-3xl font-extrabold text-center" style={{ color: '#00C2CB' }}>Konectando</h2>
           </li>
-          <li className="p-8 mt-8 lg:mt-10 shadow-xl flex flex-col items-center justify-center hover:shadow-lg hover:translate-y-1 transform transition cursor-pointer">
-            <img width="240" className="mb-6" src="/opafood.svg" alt="OpaFood logo"/>
+          <li className="p-8 mt-8 lg:mt-10 shadow-xl rounded-md flex flex-col items-center justify-center hover:shadow-lg hover:translate-y-1 transform transition cursor-pointer">
+            <img className="w-52 md:w-64 mb-6" src="/opafood.svg" alt="OpaFood logo"/>
             <h2 className="text-2xl md:text-3xl font-extrabold text-center" style={{ color: '#f87652' }}>OpaFood!</h2>
           </li>
-          <li className="p-8 mt-8 lg:mt-10 shadow-xl flex flex-col items-center justify-center hover:shadow-lg hover:translate-y-1 transform transition cursor-pointer">
-            <img width="180" className="mb-6" src="/mecsystem.png" alt="MecSystem logo"/>
+          <li className="p-8 mt-8 lg:mt-10 shadow-xl rounded-md flex flex-col items-center justify-center hover:shadow-lg hover:translate-y-1 transform transition cursor-pointer">
+            <img className="w-36 md:w-48 mb-6" src="/mecsystem.png" alt="MecSystem logo"/>
             <h2 className="text-2xl md:text-3xl font-extrabold text-center" style={{ color: '#0088cc' }}>MecSystem</h2>
           </li>
         </ul>
