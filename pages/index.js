@@ -3,29 +3,6 @@ import { useEffect, useState } from "react";
 import WhatsAppFAB from '../components/WhatsAppFAB'
 
 export default function Home() {
-  const [liked, setLiked] = useState(false)
-  const [likes, setLikes] = useState(0)
-
-  useEffect(() => {
-    setLiked(localStorage.getItem("liked"))
-    
-    fetch('http://localhost:3000/api/like')
-      .then(response => response.json())
-      .then(data => {
-        setLikes(data.likes)
-      })
-  })
-
-  function handleLike() {
-    fetch('http://localhost:3000/api/like', { method: 'POST' })
-      .then(response => {
-        if (response.status === 200) {
-          localStorage.setItem("liked", true)
-          setLiked(true)
-        }
-      })
-  }
-
   return (
     <>
       <WhatsAppFAB />
@@ -73,18 +50,13 @@ export default function Home() {
         </div>
       </main>
 
-      { likes ? 
-        <section className="p-5 shadow-lg rounded-md fit-content leading-snug">
-          <img className="mr-2 inline-block align-middle" width="25" height="25" src="/heart.png" alt="Heart Emoji"/>
-          {likes} people liked my work so far. { !liked && ' Did you like it too?' } 
-          { !liked &&
-            <button className="ml-2 text-red-600 font-bold focus:outline-none" onClick={handleLike}>
-              Touch here
-            </button>
-          }
-        </section>
-        : ''
-      }
+      <section className="p-5 shadow-lg rounded-md fit-content leading-snug">
+        <img className="mr-2 inline-block align-middle" width="25" height="25" src="/heart.png" alt="Heart Emoji"/>
+        9 people liked my work so far. Did you like it too?{' '}
+          <button className="ml-2 text-red-600 font-bold focus:outline-none">
+            Touch here
+          </button>
+      </section>
 
       <section className="my-20 space-y-12">
         <h1 className="text-2xl md:text-4xl font-extrabold relative">
@@ -186,6 +158,46 @@ export default function Home() {
             <h2 className="text-3xl font-extrabold mb-5">Freelance</h2>
             <p>
               Before I started working in any company, I developed small websites for businesses in order to obtain exercise.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section className="my-28 space-y-12 flex flex-col">
+        <h1 className="text-center text-2xl md:text-4xl font-extrabold relative w-full mb-8 lg:mb-20">
+          What people say about me
+        </h1>
+
+        <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 font-medium text-lg md:text-xl list-none">
+          <li className="relative pl-12">
+            <img className="absolute left-4 -top-8 lg:-left-0 lg:-top-20 w-20 lg:w-36 opacity-10" src="/quote.svg" alt="Quote"/>
+            <h2 className="text-3xl font-extrabold">Pablo Luiz Rodrigues</h2>
+            <span className="text-gray-600">Tests Analyst at Philips</span>
+            <p className="leading-relaxed text-justify mt-5">
+              Ruan is an excellent professional, always concerned with doing the best and carrying out his activities with excellence.
+              He is a great developer, always with constructive criticism and great solutions, constantly demonstrating extensive knowledge.
+              I had the privilege of working with him on projects and he is a person who is great at working as a team, as he is open to exchanging ideas and sharing knowledge, always adding, adding and contributing to the team.
+              [...]
+              First-rate professional, who has a bright future ahead and those who can work with him, will certainly have a great experience.
+              [...]
+            </p>
+          </li>
+          <li className="relative pl-12">
+            <img className="absolute left-4 -top-8 lg:-left-0 lg:-top-20 w-20 lg:w-36 opacity-10" src="/quote.svg" alt="Quote"/>
+            <h2 className="text-3xl font-extrabold">Vilson Moro</h2>
+            <span className="text-gray-600">Professor at UDESC</span>
+            <p className="leading-relaxed text-justify mt-5">
+              I worked as a professor at Ruan, while he was studying Computer Technician at CedupHH. He is a person with a great interpersonal relationship. 
+              They have an attitude, they don't expect things to happen, they actively participate. He always sought to achieve excellence in all proposed activities. 
+              In classes, he always tried to do more than what was proposed in class. Always questioning, seeking to innovate in the proposal of solutions to the problems presented.
+            </p>
+          </li>
+          <li className="relative pl-12">
+            <img className="absolute left-4 -top-8 lg:-left-0 lg:-top-20 w-20 lg:w-36 opacity-10" src="/quote.svg" alt="Quote"/>
+            <h2 className="text-3xl font-extrabold">Brigiane Cardoso</h2>
+            <span className="text-gray-600">Tests Analyst at Philips</span>
+            <p className="leading-relaxed text-justify mt-5">
+              I worked with Ruan on a project, Ruan besides being a great programmer is always concerned with helping us create a better quality product.
             </p>
           </li>
         </ul>

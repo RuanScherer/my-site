@@ -1,39 +1,30 @@
-const mongoose = require('mongoose')
-
-const Like = mongoose.model('Like', { quantity: Number })
+/*const redis = require('redis')
+const client = redis.createClient({
+  auth_pass: '8yjiZhKKE0ZJVFDD2oJqvlutCNxgGErk',
+  password: '8yjiZhKKE0ZJVFDD2oJqvlutCNxgGErk',
+  db: 'my-site',
+  host: 'redis-10727.c245.us-east-1-3.ec2.cloud.redislabs.com',
+  port: 10727,
+})
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    mongoose.connect('mongodb+srv://usuario_admin:HQQkSVAaLEjLVAKX@mycluster.lcfko.mongodb.net/my-site?retryWrites=true&w=majority', {
-      useNewUrlParser: true, 
-      useUnifiedTopology: true
-    })
+    try {
+      let likes = await client.get("likes")
 
-    let like = await Like.findOne()
+      if (!likes) {
+        likes = 1
+      } else {
+        likes += 1
+      }
 
-    if (!like) {
-      like = new Like({ quantity: 1 })
-    } else {
-      like.quantity += 1
+      await client.set("likes", likes)
+
+      return res.end(JSON.stringify({ message: 'Success!' }))
+    } catch (error) {
+      return res.end(JSON.stringify({ message: error }))
     }
-
-    return like.save()
-      .then(() => res.end(JSON.stringify({ message: 'Success!' })))
-      .catch(err => res.end(JSON.stringify({ message: err })))
-      .finally(() => mongoose.connection.close())
-  }
-
-  if (req.method === 'GET') {
-    mongoose.connect('mongodb+srv://usuario_admin:HQQkSVAaLEjLVAKX@mycluster.lcfko.mongodb.net/my-site?retryWrites=true&w=majority', {
-      useNewUrlParser: true, 
-      useUnifiedTopology: true
-    })
-
-    let like = await Like.findOne()
-    mongoose.connection.close()
-
-    return res.end(JSON.stringify({ likes: like.quantity || 0 }))
   }
 
   return res.end(JSON.stringify({ message: 'Method not implemented' }))
-}
+}*/
