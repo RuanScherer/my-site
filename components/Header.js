@@ -10,14 +10,9 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false)
   const router = useRouter()
 
-  const CustomLink = (href, name, ...rest) => {
-    return (
-      <Link href={`#${href}`}>
-        <a {...rest} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">
-          {`${name}`}
-        </a>
-      </Link>
-    )
+  const menuVariants = {
+    open: { opacity: 1, y: 0 },
+    closed: { opacity: 0, y: "-100%" },
   }
 
   const handleScroll = () => {
@@ -50,22 +45,24 @@ const Header = () => {
         <img className="hover:opacity-50 transition" src="/images/menu.svg" alt="Menu"/>
       </button>
 
-      { showMenu && 
-        <nav className="fixed top-0 left-0 w-screen h-screen p-8 bg-white z-20 overflow-y-auto flex flex-col justify-center items-center space-y-6 text-lg">
-          <button onClick={() => setShowMenu(false)}>
-            <img className="hover:opacity-50 transition" src="/images/x.svg" alt="Menu"/>
-          </button>
-          
-          { menuLinks.map(link => (
-              <Link href={`#${link.href}`}>
-                <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">
-                  {link.name}
-                </a>
-              </Link>
-            )
-          )}
-        </nav>
-      }
+      <motion.nav
+        animate={showMenu ? "open" : "closed"}
+        transition={{ duration: .4, type: "spring" }}
+        variants={menuVariants}
+        className="fixed top-0 left-0 w-screen h-screen p-8 bg-white z-20 overflow-y-auto flex flex-col justify-center items-center space-y-6 text-lg">
+        <button onClick={() => setShowMenu(false)}>
+          <img className="hover:opacity-50 transition" src="/images/x.svg" alt="Menu"/>
+        </button>
+        
+        { menuLinks.map(link => (
+            <Link href={`#${link.href}`}>
+              <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">
+                {link.name}
+              </a>
+            </Link>
+          )
+        )}
+      </motion.nav>
     </motion.header>
   )
 }
