@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  return { props: { params, data } }
+  return { props: { params } }
 }
 
 const Project = () => {
