@@ -3,6 +3,7 @@ import { useState } from "react"
 import WhatsAppFAB from '../components/WhatsAppFAB'
 import { skills, projects, socialLinks, recommendations, awardsAndRecongition, about, jobs } from '../data/'
 import { motion } from 'framer-motion'
+import { opacityAnimation } from '../constants'
 
 export default function Home() {
   const [seeMoreAwardsAndRecongition, setSeeMoreAwardsAndRecongition] = useState(false)
@@ -11,7 +12,7 @@ export default function Home() {
     <>
       <WhatsAppFAB />
 
-      <main id="main" className="grid grid-cols-1 lg:grid-cols-7 gap-6 min-h-screen">
+      <motion.main {...opacityAnimation} id="main" className="grid grid-cols-1 lg:grid-cols-7 gap-6 min-h-screen">
         <div className="flex flex-col justify-center space-y-6 col-span-4 text-2xl md:text-4xl font-bold">
           <div className="flex items-center space-x-4">
             <img 
@@ -68,9 +69,9 @@ export default function Home() {
             alt="Technologies logo"
           />
         </div>
-      </main>
+      </motion.main>
 
-      <section id="about-me" className="pt-36 space-y-12">
+      <motion.section {...opacityAnimation} id="about-me" className="pt-36 space-y-12">
         <h1 className="text-3xl md:text-4xl font-extrabold relative">
           About me
         </h1>
@@ -80,9 +81,9 @@ export default function Home() {
           <p className="order-3 md:order-none md:col-start-2">{about[1]}</p>
           <p className="md:col-start-1">{about[2]}</p>
         </div>
-      </section>
+      </motion.section>
 
-      <section id="skills" className="pt-52 space-y-12 flex flex-col items-end">
+      <motion.section {...opacityAnimation} id="skills" className="pt-52 space-y-12 flex flex-col items-end">
         <h1 className="text-3xl md:text-4xl font-extrabold relative w-full text-right">
           My main skills
         </h1>
@@ -106,9 +107,9 @@ export default function Home() {
             )
           )}
         </ul>
-      </section>
+      </motion.section>
 
-      <section id="where-i-worked" className="pt-52 space-y-12 flex flex-col">
+      <motion.section {...opacityAnimation} id="where-i-worked" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-3xl md:text-4xl font-extrabold relative w-full mb-8 lg:mb-20">
           Where I worked
         </h1>
@@ -127,9 +128,9 @@ export default function Home() {
             )
           )}
         </ul>
-      </section>
+      </motion.section>
 
-      <section id="say-about-me" className="pt-52 space-y-12 flex flex-col">
+      <motion.section {...opacityAnimation} id="say-about-me" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-center text-3xl md:text-4xl font-extrabold relative w-full mb-8 lg:mb-20">
           What people say about me
         </h1>
@@ -149,9 +150,9 @@ export default function Home() {
             )
           )}
         </ul>
-      </section>
+      </motion.section>
 
-      <section id="awards-recognition" className="pt-52 space-y-12 flex flex-col">
+      <motion.section {...opacityAnimation} id="awards-recognition" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-center text-3xl md:text-4xl font-extrabold relative w-full lg:mb-10">
           Awards and recognition
         </h1>
@@ -179,9 +180,9 @@ export default function Home() {
             See more
           </button>
         }
-      </section>
+      </motion.section>
 
-      <section id="projects" className="pt-52 space-y-12 flex flex-col">
+      <motion.section {...opacityAnimation} id="projects" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-center text-3xl md:text-4xl font-extrabold relative w-full ">
           My projects
           <br/>
@@ -209,7 +210,7 @@ export default function Home() {
             )
           )}
         </ul>
-      </section>
+      </motion.section>
     </>
   )
 }

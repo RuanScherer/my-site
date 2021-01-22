@@ -1,10 +1,12 @@
 import Link from "next/link"
+import { motion } from 'framer-motion'
+import { opacityAnimation } from '../constants'
 
 const WhatsAppFAB = () => (
   <Link href="https://wa.link/tgjlij">
-    <a className="p-3 shadow-xl bg-white rounded-full fixed bottom-6 right-6 z-10 transform transition hover:translate-y-1 hover:shadow-lg">
+    <motion.a {...opacityAnimation} className="p-3 shadow-xl bg-white rounded-full fixed bottom-6 right-6 z-10 transform transition hover:translate-y-1 hover:shadow-lg">
       <img width="30" src="/whatsapp-symbol.svg" alt="WhatsApp"/>
-    </a>
+    </motion.a>
   </Link>
 )
 

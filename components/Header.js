@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { opacityAnimation } from '../constants'
 
 const Header = () => {
   const [scroll, setScroll] = useState(0)
@@ -18,7 +20,7 @@ const Header = () => {
   }, [])
 
   return (
-    <header className={`flex justify-between items-center p-5 bg-white sticky px-5 lg:px-14 top-0 w-full z-10 ${scroll > 0 && 'shadow'} ${router.pathname !== '/' && 'hidden'}`}>
+    <motion.header {...opacityAnimation} className={`flex justify-between items-center p-5 bg-white sticky px-5 lg:px-14 top-0 w-full z-10 ${scroll > 0 && 'shadow'} ${router.pathname !== '/' && 'hidden'}`}>
       <img className="h-5" src="/logo.svg" alt="My logo"/>
 
       <nav className="hidden xl:flex flex-wrap space-x-6 text-lg">
@@ -71,7 +73,7 @@ const Header = () => {
           </Link>
         </nav>
       }
-    </header>
+    </motion.header>
   )
 }
 

@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { socialLinks } from '../data'
+import { motion } from 'framer-motion'
+import { opacityAnimation } from '../constants'
 
 const Footer = () => {
   const router = useRouter()
 
   return (
-    <footer className="flex justify-between items-center pt-5 pb-12 mt-36">
+    <motion.footer {...opacityAnimation} className="flex justify-between items-center pt-5 pb-12 mt-36">
       <nav className="flex items-center space-x-4">
         <img className="rounded-full" width="50" height="50" src="/me.jpeg"/>
         { socialLinks.map(link => (
@@ -29,7 +31,7 @@ const Footer = () => {
           Back to top
         </a>
       </Link>
-    </footer>
+    </motion.footer>
   )
 }
 
