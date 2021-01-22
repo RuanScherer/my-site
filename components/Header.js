@@ -3,17 +3,29 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { opacityAnimation } from '../constants'
+import { menuLinks } from '../data/'
 
 const Header = () => {
   const [scroll, setScroll] = useState(0)
   const [showMenu, setShowMenu] = useState(false)
   const router = useRouter()
 
+  const CustomLink = (href, name, ...rest) => {
+    return (
+      <Link href={`#${href}`}>
+        <a {...rest} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">
+          {`${name}`}
+        </a>
+      </Link>
+    )
+  }
+
   const handleScroll = () => {
     setScroll(window.pageYOffset)
   }
 
   useEffect(() => {
+    console.log(menuLinks)
     window.addEventListener('scroll', handleScroll, { passive: true })
 
     return () => { window.removeEventListener('scroll', handleScroll) }
@@ -24,24 +36,14 @@ const Header = () => {
       <img className="h-5" src="/images/logo.svg" alt="My logo"/>
 
       <nav className="hidden xl:flex flex-wrap space-x-6 text-lg">
-        <Link href="#about-me">
-          <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">About me</a>
-        </Link>
-        <Link href="#skills">
-          <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Skills</a>
-        </Link>
-        <Link href="#where-i-worked">
-          <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Where I worked</a>
-        </Link>
-        <Link href="#say-about-me">
-          <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Recommendations</a>
-        </Link>
-        <Link href="#awards-recognition">
-          <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Awards {'&'} Recognition</a>
-        </Link>
-        <Link href="#projects">
-          <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Projects</a>
-        </Link>
+        { menuLinks.map(link => (
+            <Link href={`#${link.href}`}>
+              <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">
+                {link.name}
+              </a>
+            </Link>
+          )
+        )}
       </nav>
 
       <button className="xl:hidden" onClick={() => setShowMenu(true)}>
@@ -53,24 +55,15 @@ const Header = () => {
           <button onClick={() => setShowMenu(false)}>
             <img className="hover:opacity-50 transition" src="/images/x.svg" alt="Menu"/>
           </button>
-          <Link href="#about-me">
-            <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">About me</a>
-          </Link>
-          <Link href="#skills">
-            <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Skills</a>
-          </Link>
-          <Link href="#where-i-worked">
-            <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Where I worked</a>
-          </Link>
-          <Link href="#say-about-me">
-            <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Recommendations</a>
-          </Link>
-          <Link href="#awards-recognition">
-            <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Awards and Recognition</a>
-          </Link>
-          <Link href="#projects">
-            <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Projects</a>
-          </Link>
+          
+          { menuLinks.map(link => (
+              <Link href={`#${link.href}`}>
+                <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">
+                  {link.name}
+                </a>
+              </Link>
+            )
+          )}
         </nav>
       }
     </motion.header>

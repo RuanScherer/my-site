@@ -1,3 +1,30 @@
+export const menuLinks = [
+  {
+    href: "about-me",
+    name: "About me"
+  },
+  {
+    href: "skills",
+    name: "Skills"
+  },
+  {
+    href: "where-i-worked",
+    name: "Where I Worked"
+  },
+  {
+    href: "say-about-me",
+    name: "Recommendations"
+  },
+  {
+    href: "awards-recognition",
+    name: "Awards & Recognition"
+  },
+  {
+    href: "projects",
+    name: "Projects"
+  }
+]
+
 export const about = [
   `
     I'm 18 years old, I graduated with a computer technician and I study Information Systems at Uniasselvi in ​​Blumenau-SC. 
