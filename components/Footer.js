@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <motion.footer {...opacityAnimation} className="flex justify-between items-center pt-5 pb-12 mt-36">
       <nav className="flex items-center space-x-4">
-        <img className="rounded-full" width="50" height="50" src="/me.jpeg"/>
+        <img className="rounded-full" width="50" height="50" src="/images/me.jpeg"/>
         { socialLinks.map(link => (
             <Link href={link.href} key={link.title}>
               <a target="_blank" title={link.title}>
@@ -18,7 +18,7 @@ const Footer = () => {
                   className="cursor-pointer hover:opacity-75 transition" 
                   width="30" 
                   height="30" 
-                  src={`/${link.image}`} 
+                  src={`/images/${link.image}`} 
                   alt={link.title}
                 />
               </a>

@@ -19,8 +19,8 @@ export default function Home() {
               className="rounded-full" 
               width="80" 
               height="80" 
-              src="/me.jpeg" 
-              alt="Ruan Scherer profile photo"
+              src="/images/me.jpeg" 
+              alt="Ruan Scherer"
             />
             { socialLinks.map(link => (
                 <Link href={link.href} key={link.title}>
@@ -29,7 +29,7 @@ export default function Home() {
                       className="cursor-pointer hover:opacity-75 transition" 
                       width="30" 
                       height="30" 
-                      src={`/${link.image}`} 
+                      src={`/images/${link.image}`} 
                       alt={link.title}
                     />
                   </a>
@@ -42,7 +42,7 @@ export default function Home() {
               className="mr-2 inline-block align-middle" 
               width="40" 
               height="40" 
-              src="/hi.png" 
+              src="/images/hi.png" 
               alt="Hi Emoji"
             />
             Hi there, I'm Ruan.
@@ -56,7 +56,7 @@ export default function Home() {
               className="ml-2 inline-block align-middle" 
               width="40" 
               height="40" 
-              src="/smile.png" 
+              src="/images/smile.png" 
               alt="Smile Emoji"
             />
           </div>
@@ -65,7 +65,7 @@ export default function Home() {
         <div className="hidden lg:flex items-center justify-center col-span-3">
           <img 
             className="w-full"
-            src="/techs.svg"
+            src="/images/techs.svg"
             alt="Technologies logo"
           />
         </div>
@@ -93,8 +93,8 @@ export default function Home() {
               <li key={skill.name}>
                 <img 
                   className="w-28 md:w-40" 
-                  src={`/${skill.image}`} 
-                  alt={`/${skill.name}`}
+                  src={`/images/${skill.image}`} 
+                  alt={skill.name}
                 />
                 <legend className="text-center">{skill.name}</legend>
                 <div className="flex items-center justify-between gap-2">
@@ -119,7 +119,7 @@ export default function Home() {
               <li className="relative pl-12">
                 <img 
                   className={`absolute ${job.imageSize || "-left-4 -top-14 md:-top-18 lg:-left-12 lg:-top-28 xl:-left-12 xl:-top-2/4 w-28 lg:w-52"} opacity-20`}
-                  src={`/${job.image}`}
+                  src={`/images/${job.image}`}
                   alt={`${job.name} Logo`}
                 />
                 <h2 className="text-2xl md:text-3xl font-extrabold mb-5">{job.name}</h2>
@@ -140,7 +140,7 @@ export default function Home() {
               <li className="relative pl-12">
                 <img 
                   className="absolute left-4 -top-8 lg:-left-0 lg:-top-20 w-20 lg:w-36 opacity-10" 
-                  src="/quote.svg" 
+                  src="/images/quote.svg" 
                   alt="Quote"
                 />
                 <h2 className="text-2xl md:text-3xl font-extrabold">{recommendation.name}</h2>
@@ -162,7 +162,7 @@ export default function Home() {
               <li className={`${(!seeMoreAwardsAndRecongition && item.hidden) && 'hidden'} lg:block relative pl-12 mt-8 lg:mt-10`}>
                 <img 
                   className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" 
-                  src="/prize.svg" 
+                  src="/images/prize.svg" 
                   alt="Prize"
                 />
                 <h2 className="text-2xl md:text-3xl font-extrabold">{item.title}</h2>
@@ -199,7 +199,7 @@ export default function Home() {
                 key={project.id}>
                 <li className="relative p-8 mt-8 lg:mt-10 shadow-xl rounded-md flex flex-col items-center justify-center hover:shadow-lg hover:translate-y-1 transform transition cursor-pointer">
                   <motion.img 
-                    src={`/${project.logo}`} 
+                    src={`/images/${project.logo}`} 
                     className="w-36 md:w-48 mb-6"
                     layoutId={project.id}
                     alt="Project logo"

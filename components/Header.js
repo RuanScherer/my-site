@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <motion.header {...opacityAnimation} className={`flex justify-between items-center p-5 bg-white sticky px-5 lg:px-14 top-0 w-full z-10 ${scroll > 0 && 'shadow'} ${router.pathname !== '/' && 'hidden'}`}>
-      <img className="h-5" src="/logo.svg" alt="My logo"/>
+      <img className="h-5" src="/images/logo.svg" alt="My logo"/>
 
       <nav className="hidden xl:flex flex-wrap space-x-6 text-lg">
         <Link href="#about-me">
@@ -34,24 +34,24 @@ const Header = () => {
           <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Where I worked</a>
         </Link>
         <Link href="#say-about-me">
-          <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Recommendations</a>
+          <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Recommendations</a>
         </Link>
         <Link href="#awards-recognition">
-          <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Awards {'&'} Recognition</a>
+          <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Awards {'&'} Recognition</a>
         </Link>
         <Link href="#projects">
-          <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Projects</a>
+          <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Projects</a>
         </Link>
       </nav>
 
       <button className="xl:hidden" onClick={() => setShowMenu(true)}>
-        <img className="hover:opacity-50 transition" src="/menu.svg" alt="Menu"/>
+        <img className="hover:opacity-50 transition" src="/images/menu.svg" alt="Menu"/>
       </button>
 
       { showMenu && 
         <nav className="fixed top-0 left-0 w-screen h-screen p-8 bg-white z-20 overflow-y-auto flex flex-col justify-center items-center space-y-6 text-lg">
           <button onClick={() => setShowMenu(false)}>
-            <img className="hover:opacity-50 transition" src="/x.svg" alt="Menu"/>
+            <img className="hover:opacity-50 transition" src="/images/x.svg" alt="Menu"/>
           </button>
           <Link href="#about-me">
             <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">About me</a>
