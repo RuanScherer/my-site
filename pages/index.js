@@ -130,7 +130,7 @@ export default function Home() {
 
         <ul className="flex flex-wrap lg:grid lg:grid-cols-5 items-center justify-center gap-16 leading-relaxed font-bold text-lg md:text-xl list-none">
           { skills.map(skill => (
-              <li>
+              <li key={skill.name}>
                 <img 
                   className="w-28 md:w-40" 
                   src={`/${skill.image}`} 
@@ -345,7 +345,10 @@ export default function Home() {
 
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 font-medium text-lg md:text-xl list-none">
           { projects.map(project => (
-              <Link href={`/project/${project.id}`}>
+              <Link 
+                href={`/project/[name]`} 
+                as={`/project/${project.id}`}
+                key={project.id}>
                 <li className="relative p-8 mt-8 lg:mt-10 shadow-xl rounded-md flex flex-col items-center justify-center hover:shadow-lg hover:translate-y-1 transform transition cursor-pointer">
                   <motion.img 
                     src={`/${project.logo}`} 

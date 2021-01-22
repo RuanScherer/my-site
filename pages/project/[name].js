@@ -6,6 +6,21 @@ import { motion } from 'framer-motion'
 import { opacityAnimation } from '../../constants'
 import { useEffect } from 'react'
 
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params : { name: 'konectando' } },
+      { params : { name: 'opafood' } },
+      { params : { name: 'mecsystem' } }
+    ],
+    fallback: false
+  }
+}
+
+export async function getStaticProps({ params }) {
+  return { props: { params, data } }
+}
+
 const Project = () => {
   const router = useRouter()
   const { name } = router.query
