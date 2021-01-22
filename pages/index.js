@@ -1,7 +1,8 @@
 import Link from "next/link"
 import { useState } from "react"
 import WhatsAppFAB from '../components/WhatsAppFAB'
-import { skills } from '../data/'
+import { skills, projects } from '../data/'
+import { motion } from 'framer-motion'
 
 export default function Home() {
   const [seeMoreAwardsAndRecongition, setSeeMoreAwardsAndRecongition] = useState(false)
@@ -13,30 +14,66 @@ export default function Home() {
       <main id="main" className="grid grid-cols-1 lg:grid-cols-7 gap-6 min-h-screen">
         <div className="flex flex-col justify-center space-y-6 col-span-4 text-2xl md:text-4xl font-bold">
           <div className="flex items-center space-x-4">
-            <img className="rounded-full" width="80" height="80" src="/me.jpeg" alt="Ruan Scherer profile photo"/>
+            <img 
+              className="rounded-full" 
+              width="80" 
+              height="80" 
+              src="/me.jpeg" 
+              alt="Ruan Scherer profile photo"
+            />
             <Link href="https://www.instagram.com/ruan.scherer/">
               <a target="_blank" title="Instagram">
-                <img className="cursor-pointer hover:opacity-75 transition" width="30" height="30" src="/instagram.svg" alt="Instagram"/>
+                <img 
+                  className="cursor-pointer hover:opacity-75 transition" 
+                  width="30" 
+                  height="30" 
+                  src="/instagram.svg" 
+                  alt="Instagram"
+                />
               </a>
             </Link>
             <Link href="https://www.linkedin.com/in/ruan-scherer/">
               <a target="_blank" title="LinkedIn">
-                <img className="cursor-pointer hover:opacity-75 transition" width="30" height="30" src="/linkedin.svg" alt="LinkedIn"/>
+                <img 
+                  className="cursor-pointer hover:opacity-75 transition" 
+                  width="30" 
+                  height="30" 
+                  src="/linkedin.svg" 
+                  alt="LinkedIn"
+                />
               </a>
             </Link>
             <Link href="https://www.github.com/RuanScherer/">
               <a target="_blank" title="GitHub">
-                <img className="cursor-pointer hover:opacity-75 transition" width="30" height="30" src="/github.svg" alt="GitHub"/>
+                <img 
+                  className="cursor-pointer hover:opacity-75 transition" 
+                  width="30" 
+                  height="30" 
+                  src="/github.svg" 
+                  alt="GitHub"
+                />
               </a>
             </Link>
             <Link href="/Ruan-Scherer.pdf">
               <a target="_blank" title="Curriculum">
-                <img className="cursor-pointer hover:opacity-75 transition" width="30" height="30" src="/document.png" alt="Curriculum"/>
+                <img 
+                  className="cursor-pointer hover:opacity-75 transition" 
+                  width="30" 
+                  height="30" 
+                  src="/document.png" 
+                  alt="Curriculum"
+                />
               </a>
             </Link>
           </div>
           <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
-            <img className="mr-2 inline-block align-middle" width="40" height="40" src="/hi.png" alt="Hi Emoji"/>
+            <img 
+              className="mr-2 inline-block align-middle" 
+              width="40" 
+              height="40" 
+              src="/hi.png" 
+              alt="Hi Emoji"
+            />
             Hi there, I'm Ruan.
           </div>
           <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
@@ -44,22 +81,24 @@ export default function Home() {
           </div>
           <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
             Scroll up and let me perform better
-            <img className="ml-2 inline-block align-middle" width="40" height="40" src="/smile.png" alt="Smile Emoji"/>
+            <img 
+              className="ml-2 inline-block align-middle" 
+              width="40" 
+              height="40" 
+              src="/smile.png" 
+              alt="Smile Emoji"
+            />
           </div>
         </div>
 
         <div className="hidden lg:flex items-center justify-center col-span-3">
-          <img className="w-full" src="/techs.svg" alt="Technologies logo"/>
+          <img 
+            className="w-full"
+            src="/techs.svg"
+            alt="Technologies logo"
+          />
         </div>
       </main>
-
-      <section className="p-5 shadow-lg rounded-md fit-content leading-snug text-lg md:text-xl">
-        <img className="mr-2 inline-block align-middle" width="25" height="25" src="/heart.png" alt="Heart Emoji"/>
-        9 people liked my work so far. Did you like it too?{' '}
-          <button className="ml-2 text-red-600 font-bold focus:outline-none">
-            Touch here
-          </button>
-      </section>
 
       <section id="about-me" className="pt-36 space-y-12">
         <h1 className="text-3xl md:text-4xl font-extrabold relative">
@@ -86,14 +125,17 @@ export default function Home() {
 
       <section id="skills" className="pt-52 space-y-12 flex flex-col items-end">
         <h1 className="text-3xl md:text-4xl font-extrabold relative w-full text-right">
-          My skills
+          My main skills
         </h1>
-
 
         <ul className="flex flex-wrap lg:grid lg:grid-cols-5 items-center justify-center gap-16 leading-relaxed font-bold text-lg md:text-xl list-none">
           { skills.map(skill => (
               <li>
-                <img className="w-28 md:w-40" src={`/${skill.image}`} alt={`/${skill.name}`}/>
+                <img 
+                  className="w-28 md:w-40" 
+                  src={`/${skill.image}`} 
+                  alt={`/${skill.name}`}
+                />
                 <legend className="text-center">{skill.name}</legend>
                 <div className="flex items-center justify-between gap-2">
                   <div className="bg-gray-100 h-3 w-full rounded-lg relative">
@@ -112,10 +154,13 @@ export default function Home() {
           Where I worked
         </h1>
 
-
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 leading-relaxed font-medium text-lg md:text-xl list-none text-justify">
           <li className="relative pl-12">
-            <img className="absolute -left-4 -top-14 md:-top-18 lg:-left-12 lg:-top-28 xl:-left-12 xl:-top-2/4 w-28 lg:w-52 opacity-20" src="/philips.svg" alt="Philips Logo"/>
+            <img 
+              className="absolute -left-4 -top-14 md:-top-18 lg:-left-12 lg:-top-28 xl:-left-12 xl:-top-2/4 w-28 lg:w-52 opacity-20"
+              src="/philips.svg" 
+              alt="Philips Logo"
+            />
             <h2 className="text-2xl md:text-3xl font-extrabold mb-5">Philips</h2>
             <p>
               I started here in March 2019 as an intern and was hired in October of the same year. 
@@ -123,7 +168,11 @@ export default function Home() {
             </p>
           </li>
           <li className="relative pl-12">
-            <img className="absolute -left-4 -top-14 md:-top-18 lg:-left-12 lg:-top-28 xl:-left-12 xl:-top-2/4 w-28 lg:w-52 opacity-20" src="/autoaprova.svg" alt="AutoAprova logo"/>
+            <img
+              className="absolute -left-4 -top-14 md:-top-18 lg:-left-12 lg:-top-28 xl:-left-12 xl:-top-2/4 w-28 lg:w-52 opacity-20"
+              src="/autoaprova.svg"
+              alt="AutoAprova logo"
+            />
             <h2 className="text-2xl md:text-3xl font-extrabold mb-5">AutoAprova</h2>
             <p>
               I worked at Auto Aprova temporarily (3 months) as a freelancer developing a web platform for 
@@ -131,7 +180,11 @@ export default function Home() {
             </p>
           </li>
           <li className="relative pl-12">
-          <img className="absolute -left-0 -top-5 lg:-left-6 lg:-top-6 w-28 lg:w-40 opacity-30" src="/logo.svg" alt="My logo"/>
+            <img 
+              className="absolute -left-0 -top-5 lg:-left-6 lg:-top-6 w-28 lg:w-40 opacity-30" 
+              src="/logo.svg" 
+              alt="My logo"
+            />
             <h2 className="text-2xl md:text-3xl font-extrabold mb-5">Freelance</h2>
             <p>
               Before I started working in any company, I developed small websites for businesses in order to obtain exercise.
@@ -147,7 +200,11 @@ export default function Home() {
 
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 font-medium list-none">
           <li className="relative pl-12">
-            <img className="absolute left-4 -top-8 lg:-left-0 lg:-top-20 w-20 lg:w-36 opacity-10" src="/quote.svg" alt="Quote"/>
+            <img 
+              className="absolute left-4 -top-8 lg:-left-0 lg:-top-20 w-20 lg:w-36 opacity-10" 
+              src="/quote.svg" 
+              alt="Quote"
+            />
             <h2 className="text-2xl md:text-3xl font-extrabold">Pablo Luiz Rodrigues</h2>
             <span className="text-lg md:text-xl text-gray-600">Tests Analyst at Philips</span>
             <p className="leading-relaxed text-lg md:text-xl text-justify mt-5">
@@ -160,7 +217,11 @@ export default function Home() {
             </p>
           </li>
           <li className="relative pl-12">
-            <img className="absolute left-4 -top-8 lg:-left-0 lg:-top-20 w-20 lg:w-36 opacity-10" src="/quote.svg" alt="Quote"/>
+            <img 
+              className="absolute left-4 -top-8 lg:-left-0 lg:-top-20 w-20 lg:w-36 opacity-10" 
+              src="/quote.svg" 
+              alt="Quote"
+            />
             <h2 className="text-2xl md:text-3xl font-extrabold">Vilson Moro</h2>
             <span className="text-lg md:text-xl text-gray-600">Professor at UDESC</span>
             <p className="leading-relaxed text-lg md:text-xl text-justify mt-5">
@@ -170,7 +231,11 @@ export default function Home() {
             </p>
           </li>
           <li className="relative pl-12">
-            <img className="absolute left-4 -top-8 lg:-left-0 lg:-top-20 w-20 lg:w-36 opacity-10" src="/quote.svg" alt="Quote"/>
+            <img 
+              className="absolute left-4 -top-8 lg:-left-0 lg:-top-20 w-20 lg:w-36 opacity-10" 
+              src="/quote.svg" 
+              alt="Quote"
+            />
             <h2 className="text-2xl md:text-3xl font-extrabold">Brigiane Cardoso</h2>
             <span className="text-lg md:text-xl text-gray-600">Tests Analyst at Philips</span>
             <p className="leading-relaxed text-lg md:text-xl text-justify mt-5">
@@ -182,12 +247,16 @@ export default function Home() {
 
       <section id="awards-recognition" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-center text-3xl md:text-4xl font-extrabold relative w-full lg:mb-10">
-          Awards and Recognition
+          Awards and recognition
         </h1>
 
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 font-medium list-none">
           <li className="relative pl-12 mt-8 lg:mt-10">
-            <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
+            <img 
+              className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" 
+              src="/prize.svg" 
+              alt="Prize"
+            />
             <h2 className="text-2xl md:text-3xl font-extrabold">Revelation Project</h2>
             <span className="text-lg md:text-xl text-gray-600">Comunidade Hackathon Shift</span>
             <p className="leading-relaxed text-lg md:text-xl text-justify mt-5">
@@ -195,7 +264,11 @@ export default function Home() {
             </p>
           </li>
           <li className="relative pl-12 mt-8 lg:mt-10">
-            <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
+            <img 
+              className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" 
+              src="/prize.svg" 
+              alt="Prize"
+            />
             <h2 className="text-2xl md:text-3xl font-extrabold">Top 3</h2>
             <span className="text-lg md:text-xl text-gray-600">NASA Space Apps COVID-19 Challenge</span>
             <p className="leading-relaxed text-lg md:text-xl text-justify mt-5">
@@ -203,7 +276,11 @@ export default function Home() {
             </p>
           </li>
           <li className="relative pl-12 mt-8 lg:mt-10">
-            <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
+            <img 
+              className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" 
+              src="/prize.svg" 
+              alt="Prize"
+            />
             <h2 className="text-2xl md:text-3xl font-extrabold">Connecty Pay Challenge Winner</h2>
             <span className="text-lg md:text-xl text-gray-600">Hack Pela Gastronomia</span>
             <p className="leading-relaxed text-lg md:text-xl text-justify mt-5">
@@ -211,7 +288,11 @@ export default function Home() {
             </p>
           </li>
           <li className={`${!seeMoreAwardsAndRecongition && 'hidden'} lg:block relative pl-12 mt-8 lg:mt-10`}>
-            <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
+            <img 
+              className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" 
+              src="/prize.svg" 
+              alt="Prize"
+            />
             <h2 className="text-2xl md:text-3xl font-extrabold">Second Place</h2>
             <span className="text-lg md:text-xl text-gray-600">Inter Hack Shift</span>
             <p className="leading-relaxed text-lg md:text-xl text-justify mt-5">
@@ -219,7 +300,11 @@ export default function Home() {
             </p>
           </li>
           <li className={`${!seeMoreAwardsAndRecongition && 'hidden'} lg:block relative pl-12 mt-8 lg:mt-10`}>
-            <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
+            <img 
+              className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" 
+              src="/prize.svg" 
+              alt="Prize"
+            />
             <h2 className="text-2xl md:text-3xl font-extrabold">Maximum Grade</h2>
             <span className="text-lg md:text-xl text-gray-600">Final Paper</span>
             <p className="leading-relaxed text-lg md:text-xl text-justify mt-5">
@@ -227,7 +312,11 @@ export default function Home() {
             </p>
           </li>
           <li className={`${!seeMoreAwardsAndRecongition && 'hidden'} lg:block relative pl-12 mt-8 lg:mt-10`}>
-            <img className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" src="/prize.svg" alt="Prize"/>
+            <img 
+              className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" 
+              src="/prize.svg" 
+              alt="Prize"
+            />
             <h2 className="text-2xl md:text-3xl font-extrabold">Winner</h2>
             <span className="text-lg md:text-xl text-gray-600">Hackathon Shift Smart Cities</span>
             <p className="leading-relaxed text-lg md:text-xl text-justify mt-5">
@@ -247,22 +336,28 @@ export default function Home() {
 
       <section id="projects" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-center text-3xl md:text-4xl font-extrabold relative w-full ">
-          My Projects
+          My projects
+          <br/>
+          <span className="md:hidden text-lg font-bold text-gray-800">
+            Touch for details
+          </span>
         </h1>
 
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 font-medium text-lg md:text-xl list-none">
-          <li className="p-8 mt-8 lg:mt-10 shadow-xl rounded-md flex flex-col items-center justify-center hover:shadow-lg hover:translate-y-1 transform transition cursor-pointer">
-            <img className="w-36 md:w-48 mb-6" src="/konectando.svg" alt="Konectando logo"/>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-center" style={{ color: '#00C2CB' }}>Konectando</h2>
-          </li>
-          <li className="p-8 mt-8 lg:mt-10 shadow-xl rounded-md flex flex-col items-center justify-center hover:shadow-lg hover:translate-y-1 transform transition cursor-pointer">
-            <img className="w-52 md:w-64 mb-6" src="/opafood.svg" alt="OpaFood logo"/>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-center" style={{ color: '#f87652' }}>OpaFood!</h2>
-          </li>
-          <li className="p-8 mt-8 lg:mt-10 shadow-xl rounded-md flex flex-col items-center justify-center hover:shadow-lg hover:translate-y-1 transform transition cursor-pointer">
-            <img className="w-36 md:w-48 mb-6" src="/mecsystem.png" alt="MecSystem logo"/>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-center" style={{ color: '#0088cc' }}>MecSystem</h2>
-          </li>
+          { projects.map(project => (
+              <Link href={`/project/${project.id}`}>
+                <li className="relative p-8 mt-8 lg:mt-10 shadow-xl rounded-md flex flex-col items-center justify-center hover:shadow-lg hover:translate-y-1 transform transition cursor-pointer">
+                  <motion.img 
+                    src={`/${project.logo}`} 
+                    className="w-36 md:w-48 mb-6"
+                    layoutId={project.id}
+                    alt="Project logo"
+                  />
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-center" style={{ color: project.color }}>{project.name}</h2>
+                </li>
+              </Link>
+            )
+          )}
         </ul>
       </section>
     </>

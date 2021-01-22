@@ -1,6 +1,9 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Footer = () => {
+  const router = useRouter()
+
   return (
     <footer className="flex justify-between items-center pt-5 pb-12 mt-36">
       <nav className="flex items-center space-x-4">
@@ -26,7 +29,7 @@ const Footer = () => {
           </a>
         </Link>
       </nav>
-      <Link href="#main">
+      <Link href={`${router.asPath}#main`}>
         <a className="text-lg border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">
           Back to top
         </a>

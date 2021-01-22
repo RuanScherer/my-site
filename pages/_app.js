@@ -1,11 +1,12 @@
 import Head from 'next/head'
+import { AnimateSharedLayout } from 'framer-motion'
 import Header from "../components/Header";
 import "tailwindcss/tailwind.css";
 import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <AnimateSharedLayout>
       <Head>
         <title>Ruan Scherer</title>
         <link rel="icon" href="/favicon.ico" />
@@ -19,7 +20,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps}/>
         <Footer/>
       </div>
-    </>
+    </AnimateSharedLayout>
   )
 }
 

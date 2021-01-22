@@ -1,9 +1,11 @@
+import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 const Header = () => {
   const [scroll, setScroll] = useState(0)
   const [showMenu, setShowMenu] = useState(false)
+  const router = useRouter()
 
   const handleScroll = () => {
     setScroll(window.pageYOffset)
@@ -16,10 +18,10 @@ const Header = () => {
   }, [])
 
   return (
-    <header className={`flex justify-between items-center p-5 bg-white sticky px-5 lg:px-14 top-0 w-full z-10 ${scroll > 0 ? 'shadow' : ''}`}>
+    <header className={`flex justify-between items-center p-5 bg-white sticky px-5 lg:px-14 top-0 w-full z-10 ${scroll > 0 && 'shadow'} ${router.pathname !== '/' && 'hidden'}`}>
       <img className="h-5" src="/logo.svg" alt="My logo"/>
 
-      <nav className="hidden lg:flex flex-wrap space-x-6 text-lg">
+      <nav className="hidden xl:flex flex-wrap space-x-6 text-lg">
         <Link href="#about-me">
           <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">About me</a>
         </Link>
@@ -33,14 +35,14 @@ const Header = () => {
           <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Recommendations</a>
         </Link>
         <Link href="#awards-recognition">
-          <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Awards and Recognition</a>
+          <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Awards {'&'} Recognition</a>
         </Link>
         <Link href="#projects">
           <a onClick={() => setShowMenu(false)} className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">Projects</a>
         </Link>
       </nav>
 
-      <button className="lg:hidden" onClick={() => setShowMenu(true)}>
+      <button className="xl:hidden" onClick={() => setShowMenu(true)}>
         <img className="hover:opacity-50 transition" src="/menu.svg" alt="Menu"/>
       </button>
 
