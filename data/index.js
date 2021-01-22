@@ -1,3 +1,15 @@
+export const about = [
+  `
+    I'm 18 years old, I graduated with a computer technician and I study Information Systems at Uniasselvi in ​​Blumenau-SC. 
+    In addition, I am always studying web and mobile development in my spare time, because I love it.
+  `,
+  `I also like and have been taking on freelance jobs, helping people with solutions and having fun programming.`,
+  `
+    I started professionally not too long ago, in March 2019. 
+    Since then, I had the opportunity to work with very experienced professionals who are great at what they do, and who undoubtedly contributed a lot to me.
+  `
+]
+
 export const skills = [
   {
     name: 'Node.js',
@@ -58,6 +70,28 @@ export const skills = [
     image: 'sql.svg',
     level: 73,
     color: '#00546B'
+  }
+]
+
+export const jobs = [
+  {
+    image: "philips.svg",
+    name: "Philips",
+    role: "Full Stack Developer",
+    content: "I started here in March 2019 as an intern and was hired in October of the same year. This is my current job, I develop a health system using Javascript, Java, Delphi and PL/SQL."
+  },
+  {
+    image: "autoaprova.svg",
+    name: "AutoAprova",
+    role: "Full Stack Web Developer",
+    content: "I worked at AutoAprova temporarily (3 months) as a freelancer developing a web platform for vehicle financing using technologies such as Adonis.js, React and MongoDB."
+  },
+  {
+    image: "logo.svg",
+    imageSize: "-left-0 -top-5 lg:-left-6 lg:-top-6 w-28 lg:w-40",
+    name: "Freelance",
+    role: "Full Stack Web Developer",
+    content: "Before I started working in any company, I developed small websites for businesses in order to obtain exercise.",
   }
 ]
 
@@ -165,5 +199,95 @@ export const projects = [
         image: 'sql.svg',
       }
     ]
+  }
+]
+
+export const socialLinks = [
+  {
+    href: "https://www.instagram.com/ruan.scherer/",
+    title: "Instagram",
+    image: 'instagram.svg'
+  },
+  {
+    href: "https://www.linkedin.com/in/ruan-scherer/",
+    title: "LinkedIn",
+    image: 'linkedin.svg'
+  },
+  {
+    href: "https://www.github.com/RuanScherer/",
+    title: "GitHub",
+    image: 'github.svg'
+  },
+  {
+    href: "/Ruan-Scherer.pdf",
+    title: "Curriculum",
+    image: 'document.png'
+  }
+]
+
+export const recommendations = [
+  {
+    name: "Pablo Luiz Rodrigues",
+    role: "Tests Analyst at Philips",
+    content: `
+      Ruan is an excellent professional, always concerned with doing the best and carrying out his activities with excellence.
+      He is a great developer, always with constructive criticism and great solutions, constantly demonstrating extensive knowledge.
+      I had the privilege of working with him on projects and he is a person who is great at working as a team, as he is open to exchanging ideas and sharing knowledge, always adding, adding and contributing to the team.
+      [...]
+      First-rate professional, who has a bright future ahead and those who can work with him, will certainly have a great experience.
+      [...]
+    `
+  },
+  {
+    name: "Vilson Moro",
+    role: "Professor at UDESC",
+    content: `
+      I worked as a professor at Ruan, while he was studying Computer Technician at CedupHH. He is a person with a great interpersonal relationship. 
+      They have an attitude, they don't expect things to happen, they actively participate. He always sought to achieve excellence in all proposed activities. 
+      In classes, he always tried to do more than what was proposed in class. Always questioning, seeking to innovate in the proposal of solutions to the problems presented.
+    `
+  },
+  {
+    name: "Brigiane Cardoso",
+    role: "Tests Analyst at Philips",
+    content: `
+      I worked with Ruan on a project, Ruan besides being a great programmer is always concerned with helping us create a better quality product.
+    `
+  }
+]
+
+export const awardsAndRecongition = [
+  {
+    title: "Revelation Project",
+    institution: "Comunidade Hackathon Shift",
+    content: "My teams and I were awarded in the category of Revelation Projects of the year with OpaFood and Konectando projects."
+  },
+  {
+    title: "Top 3",
+    institution: "NASA Space Apps COVID-19 Challenge",
+    content: 'We developed a project that was among the 3 finalists of the NASA Space Apps COVID-19 Challenge "The Isolation Solution" challenge."'
+  },
+  {
+    title: "Connecty Pay Challenge Winner",
+    institution: "Hack Pela Gastronomia",
+    content: "We have developed a complete solution for restaurants thinking about user experience, safety during pandemic times, sustainability and agility."
+  },
+  {
+    title: "Second Place",
+    institution: "Inter Hack Shift",
+    content: "With a sustainable and accessible electronic point project, my team and I reached second place in this hackathon.",
+    hidden: true
+  },
+  {
+    title: "Maximum Grade",
+    institution: "Final Paper",
+    content: "I obtained maximum grade in my final paper of the computer technician course.",
+    hidden: true
+  },
+  {
+    title: "Winner",
+    institution: "Hackathon Shift Smart Cities",
+    content: "This was my first hackathon, where I developed a small solution with the team to track stolen vehicles.",
+    hidden: true
   }
 ]
