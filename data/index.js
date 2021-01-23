@@ -111,7 +111,7 @@ export const jobs = [
     image: "autoaprova.svg",
     name: "AutoAprova",
     role: "Programador Web Full Stack",
-    content: "Trabalhei no AutoAprova temporariamente(3 meses) como freelancer desenvolvendo uma plataforma web para financiamento de veículos usando tecnologias como Adonis.js, React e MongoDB."
+    content: "Trabalhei no AutoAprova temporariamente (3 meses) como freelancer desenvolvendo uma plataforma web para financiamento de veículos usando tecnologias como Adonis.js, React e MongoDB."
   },
   {
     image: "logo.svg",

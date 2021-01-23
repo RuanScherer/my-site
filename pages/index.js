@@ -52,7 +52,7 @@ export default function Home() {
             Sou <span className="text-primary">{'<Programador/>'}</span> Full Stack, acadêmico e trabalho na Philips.
           </div>
           <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
-            Rola pra baixo e deixa eu me apresentar melhor
+            Role para baixo e deixe eu me apresentar melhor
             <img 
               className="ml-2 inline-block align-middle" 
               width="40" 
