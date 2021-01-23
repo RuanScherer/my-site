@@ -188,7 +188,7 @@ export default function Home() {
           Meus Projetos
           <br/>
           <span className="md:hidden text-lg font-bold text-gray-800">
-            Touch for details
+            Toque para detalhes
           </span>
         </h1>
 
