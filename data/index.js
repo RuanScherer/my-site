@@ -32,7 +32,7 @@ export const about = [
   `,
   `Também gosto e tenho trabalhado em projetos freelance, ajudando as pessoas com soluções e me divertindo com o que faço.`,
   `
-    Iniciei profissionalmente há nem tanto tempo, em março de 2019.
+    Iniciei profissionalmente há nem tanto tempo, em março de 2020.
     Desde então, eu tive oportunidades de trabalhar com profissionais excelentes e muito experientes, que sem dúvidas contribuiram muito para o meu desenvolvimento.
   `
 ]
@@ -105,7 +105,7 @@ export const jobs = [
     image: "philips.svg",
     name: "Philips",
     role: "Programador Full Stack",
-    content: "Iniciei em março de 2019 como estagiário e fui efetivado em outubro do mesmo ano. Esse é meu emprego atual, eu ajudo as pessoas desenvolvendo um sistema para a área da saúde usando Javascript, Java, Delphi e PL/SQL."
+    content: "Iniciei em março de 2020 como estagiário e fui efetivado em outubro do mesmo ano. Esse é meu emprego atual, eu ajudo as pessoas desenvolvendo um sistema para a área da saúde usando Javascript, Java, Delphi e PL/SQL."
   },
   {
     image: "autoaprova.svg",
