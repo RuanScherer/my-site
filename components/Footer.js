@@ -28,7 +28,7 @@ const Footer = () => {
       </nav>
       <Link href={`${router.asPath}#main`}>
         <a className="text-lg border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">
-          Back to top
+          Voltar ao topo
         </a>
       </Link>
     </motion.footer>

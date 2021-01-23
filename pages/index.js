@@ -45,13 +45,13 @@ export default function Home() {
               src="/images/hi.png" 
               alt="Hi Emoji"
             />
-            Hi there, I'm Ruan.
+            Olá, meu nome é Ruan.
           </div>
           <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
-            I'm a Full Stack <span className="text-primary">{'<Developer/>'}</span>, academic and currently working at Philips.
+            Sou <span className="text-primary">{'<Programador/>'}</span> Full Stack, acadêmico e trabalho na Philips.
           </div>
           <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
-            Scroll up and let me perform better
+            Rola pra baixo e deixa eu me apresentar melhor
             <img 
               className="ml-2 inline-block align-middle" 
               width="40" 
@@ -73,7 +73,7 @@ export default function Home() {
 
       <motion.section {...opacityAnimation} id="about-me" className="pt-36 space-y-12">
         <h1 className="text-3xl md:text-4xl font-extrabold relative">
-          About me
+          Sobre mim
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 text-lg md:text-xl leading-relaxed font-medium text-justify">
@@ -85,7 +85,7 @@ export default function Home() {
 
       <motion.section {...opacityAnimation} id="skills" className="pt-52 space-y-12 flex flex-col items-end">
         <h1 className="text-3xl md:text-4xl font-extrabold relative w-full text-right">
-          My main skills
+          Minhas principais skills
         </h1>
 
         <ul className="flex flex-wrap lg:grid lg:grid-cols-5 items-center justify-center gap-16 leading-relaxed font-bold text-lg md:text-xl list-none">
@@ -111,7 +111,7 @@ export default function Home() {
 
       <motion.section {...opacityAnimation} id="where-i-worked" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-3xl md:text-4xl font-extrabold relative w-full mb-8 lg:mb-20">
-          Where I worked
+          Onde trabalhei
         </h1>
 
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 leading-relaxed font-medium text-lg md:text-xl list-none text-justify">
@@ -132,7 +132,7 @@ export default function Home() {
 
       <motion.section {...opacityAnimation} id="say-about-me" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-center text-3xl md:text-4xl font-extrabold relative w-full mb-8 lg:mb-20">
-          What people say about me
+          O que dizem sobre mim
         </h1>
 
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 font-medium list-none">
@@ -154,7 +154,7 @@ export default function Home() {
 
       <motion.section {...opacityAnimation} id="awards-recognition" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-center text-3xl md:text-4xl font-extrabold relative w-full lg:mb-10">
-          Awards and recognition
+          Prêmios e reconhecimentos
         </h1>
 
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 font-medium list-none">
@@ -184,7 +184,7 @@ export default function Home() {
 
       <motion.section {...opacityAnimation} id="projects" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-center text-3xl md:text-4xl font-extrabold relative w-full ">
-          My projects
+          Meus Projetos
           <br/>
           <span className="md:hidden text-lg font-bold text-gray-800">
             Touch for details

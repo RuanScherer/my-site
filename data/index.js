@@ -1,7 +1,7 @@
 export const menuLinks = [
   {
     href: "about-me",
-    name: "About me"
+    name: "Sobre mim"
   },
   {
     href: "skills",
@@ -9,31 +9,31 @@ export const menuLinks = [
   },
   {
     href: "where-i-worked",
-    name: "Where I Worked"
+    name: "Onde trabalhei"
   },
   {
     href: "say-about-me",
-    name: "Recommendations"
+    name: "Recomendações"
   },
   {
     href: "awards-recognition",
-    name: "Awards & Recognition"
+    name: "Prêmios e Reconhecimentos"
   },
   {
     href: "projects",
-    name: "Projects"
+    name: "Projetos"
   }
 ]
 
 export const about = [
   `
-    I'm 18 years old, I graduated with a computer technician and I study Information Systems at Uniasselvi in ​​Blumenau-SC. 
-    In addition, I am always studying web and mobile development in my spare time, because I love it.
+    Tenho 18 anos de idade, sou formado como Técnico em Informática e curso Sistemas de Informação na Uniasselvi em Blumenau-SC.
+    Além disso, estou sempre estudando desenvolvimento de aplicações web e mobile porque eu amo isso.
   `,
-  `I also like and have been taking on freelance jobs, helping people with solutions and having fun programming.`,
+  `Também gosto e tenho trabalhado em projetos freelance, ajudando as pessoas com soluções e me divertindo com o que faço.`,
   `
-    I started professionally not too long ago, in March 2019. 
-    Since then, I had the opportunity to work with very experienced professionals who are great at what they do, and who undoubtedly contributed a lot to me.
+    Iniciei profissionalmente há nem tanto tempo, em março de 2019.
+    Desde então, eu tive oportunidades de trabalhar com profissionais excelentes e muito experientes, que sem dúvidas contribuiram muito para o meu desenvolvimento.
   `
 ]
 
@@ -104,21 +104,21 @@ export const jobs = [
   {
     image: "philips.svg",
     name: "Philips",
-    role: "Full Stack Developer",
-    content: "I started here in March 2019 as an intern and was hired in October of the same year. This is my current job, I develop a health system using Javascript, Java, Delphi and PL/SQL."
+    role: "Programador Full Stack",
+    content: "Iniciei em março de 2019 como estagiário e fui efetivado em outubro do mesmo ano. Esse é meu emprego atual, eu ajudo as pessoas desenvolvendo um sistema para a área da saúde usando Javascript, Java, Delphi e PL/SQL."
   },
   {
     image: "autoaprova.svg",
     name: "AutoAprova",
-    role: "Full Stack Web Developer",
-    content: "I worked at AutoAprova temporarily (3 months) as a freelancer developing a web platform for vehicle financing using technologies such as Adonis.js, React and MongoDB."
+    role: "Programador Web Full Stack",
+    content: "Trabalhei no AutoAprova temporariamente(3 meses) como freelancer desenvolvendo uma plataforma web para financiamento de veículos usando tecnologias como Adonis.js, React e MongoDB."
   },
   {
     image: "logo.svg",
     imageSize: "-left-0 -top-5 lg:-left-6 lg:-top-6 w-28 lg:w-40",
     name: "Freelance",
-    role: "Full Stack Web Developer",
-    content: "Before I started working in any company, I developed small websites for businesses in order to obtain exercise.",
+    role: "Programador Full Stack Web",
+    content: "Antes de começar a trabalhar em qualquer empresa eu desenvolvi alguns websites para comércios pequenos com finalidade de obter experiência. É um trabalho que gosto muito e ainda venho fazendo quando surgem oportunidades.",
   }
 ]
 
@@ -127,14 +127,14 @@ export const projects = [
     id: "konectando",
     name: "Konectando",
     color: '#00C2CB',
-    type: "Team Project",
+    type: "Projeto em Equipe",
     repository: "github.com/RuanScherer/konectando-platform",
-    description: "A web platform that connects people who need electronic devices for distance education with people who have unused electronics and can donate them.",
+    description: "Uma plataforma web que conecta pessoas que precisam de dispositivos eletrônicos para educação a distância com pessoas que possuem eletrônicos não utilizados e podem doá-los.",
     logo: "konectando.svg",
     explanation: [
-      "With the COVID-19 pandemic, the team found a new challenge: the inclusion of students with low financial conditions in distance education. We thought about how we could help these students to continue studying without being harmed and having the same resources as others. Following this line, we had the idea of ​​developing a platform that helps with the engagement in donations of electronics for distance education, so Konectando was born.",
-      "On the platform, the community's role is simple: navigate between the registered institutions that are receiving donations, choose one, obtain the necessary information on the platform itself and then schedule a time with pre-registration of the donation.",
-      "The institutions for their part will receive/manage donations, provide contact and location information, and pass on these donations to students who really need them (because schools have knowledge about who students are in need).",      
+      "Com a pandemia do COVID-19, a equipe encontrou um novo desafio: a inclusão de alunos com baixa condição financeira na educação a distância. Pensamos em como poderíamos ajudar esses alunos a continuar estudando sem serem prejudicados e tendo os mesmos recursos que os outros. Nessa linha, tivemos a ideia de desenvolver uma plataforma que auxiliasse no engajamento em doações de eletrônicos para educação a distância, então nasceu a Konectando.",
+      "Na plataforma, o papel da comunidade é simples: navegar entre as instituições cadastradas que estão recebendo doações, escolher uma, obter as informações necessárias na própria plataforma e agendar um horário com o pré-cadastro da doação.",
+      "As instituições, por sua vez, recebem/administram as doações, fornecem informações de contato e localização e repassam essas doações aos alunos que realmente precisam delas (porque elas sabem quem os alunos precisam).",
     ],
     stack: [
       {
@@ -159,16 +159,16 @@ export const projects = [
     id: "opafood",
     name: "OpaFood!",
     color: '#F87652',
-    type: "Team Project",
+    type: "Projeto em Equipe",
     soon: true,
     repository: "github.com/RuanScherer/opa-food",
-    description: "A complete solution for restaurants with a user experience in mind, pandemic safety, sustainability and agility. The solution covers from the moment the user makes the reservation until the moment the bill is paid.",
+    description: "Uma solução completa para restaurantes pensando em experiência do usuário, segurança pandêmica, sustentabilidade e agilidade. A solução cobre desde o momento em que o usuário faz a reserva até o momento em que a conta é paga.",
     logo: "opafood.svg",
     explanation: [
-      "Thinking about proposing solutions for the gastronomic area, especially during the pandemic, the team found some points to work on: safety, user experience and adding value to restaurants. Working on this, we developed a prototype of a mobile platform that would serve the customer (from the restaurant) from the moment of table reservation until payment.",
-      "From anywhere, the user can navigate between the restaurants on the platform, finding the one he likes best and then having the possibility to book a table (thinking about avoiding crowds).",
-      "In addition, when he arrives at the restaurant he scans a QR Code found on the table, which will open the restaurant's menu and from there it is possible to place and track your orders (self-service: less contact with waiters and no waiting time to be served).",
-      "Finally, when the user decides, he can view the description and the total of his orders and then pay his bill through the app itself (without agglomerations in queues or contact with collectors)."
+      "Pensando em propor soluções para a área gastronômica, principalmente durante a pandemia, a equipe encontrou alguns pontos para trabalhar: segurança, experiência do usuário e agregação de valor aos restaurantes. Trabalhando nisso, desenvolvemos um protótipo de aplicação mobile que atenderia o cliente (do restaurante) desde o momento da reserva da mesa até o pagamento.",
+      "De qualquer lugar, o usuário pode navegar entre os restaurantes da plataforma, encontrando o que mais gosta e tendo a possibilidade de reservar mesa (pensando em evitar aglomerações).",
+      "Além disso, ao chegar ao restaurante ele escaneia um QR Code encontrado na mesa, que abrirá o cardápio do restaurante e a partir daí é possível fazer e acompanhar seus pedidos (self-service: menos contato com garçons e sem tempo de espera para ser atendido).",
+      "Por fim, quando o usuário decidir, poderá visualizar a sua comanda e pagar a conta através do próprio aplicativo (sem aglomerações em filas ou contato com cobradores)."
     ],
     stack: [
       {
@@ -197,16 +197,16 @@ export const projects = [
     id: "mecsystem",
     name: "MecSystem",
     color: '#0088cc',
-    type: "Team Project",
+    type: "Projeto em Equipe",
     repository: "github.com/RuanScherer/MecSystem_Mobile",
-    description: "Complete electronic point system including embedded system, mobile, desktop and web application, both with a focus on accessibility for people with disabilities and sustainability.",
+    description: "Sistema de ponto eletrônico completo incluindo sistema embarcado, aplicação mobile, desktop e web, ambos com foco em acessibilidade para pessoas com deficiência e sustentabilidade.",
     logo: "mecsystem.png",
     explanation: [
-      "In this project, the team's idea was not just to create an electronic point application, but to make it sustainable and accessible.",
-      "We have developed a desktop application where administrators can manage employee records, time stamps and reports (which could be printed on braille for people with visual impairments).",
-      "In the mobile application, each employee could view the main data of their registration and all their point records. The app has help videos for using the application in sign language for people with hearing impairments who usually have literacy problems.",
-      "In the web application is where the employee can view his point mirror (without the need for printing for each employee), and there he can accept or reject what was presented. Reports on the employees' responses and / or pending issues regarding the point mirror will be sent to the administrators.",
-      "And, of course, we developed an embedded system where the actual point marking is made using radio frequency cards."
+      "Nesse projeto, a ideia da equipe não era apenas criar um sistema de ponto eletrônico, mas torná-lo sustentável e acessível.",
+      "Desenvolvemos uma aplicação desktop onde os administradores podem gerenciar cadastros de funcionários, registros de ponto e relatórios (que podem ser impressos em braille para pessoas com deficiência visual).",
+      "Na aplicação mobile, cada funcionário pode visualizar os principais dados de seu cadastro e todos os seus registros de ponto. O aplicativo possui vídeos de ajuda para o uso do aplicativo em linguagem de sinais para pessoas com deficiência auditiva que costumam ter problemas de alfabetização.",
+      "Na aplicação web é onde o funcionário pode visualizar seu espelho de ponto (sem a necessidade de impressão para cada funcionário), e lá ele pode aceitar ou rejeitar o que foi apresentado. Relatórios sobre as respostas dos funcionários e/ou questões pendentes em relação ao espelho de ponto serão enviados aos administradores.",
+      "E, claro, desenvolvemos um sistema embarcado onde a é feita a marcação do ponto usando cartões RFID."
     ],
     stack: [
       {
@@ -247,7 +247,7 @@ export const socialLinks = [
   },
   {
     href: "/documents/Ruan-Scherer.pdf",
-    title: "Curriculum",
+    title: "Currículo",
     image: 'document.png'
   }
 ]
@@ -255,66 +255,66 @@ export const socialLinks = [
 export const recommendations = [
   {
     name: "Pablo Luiz Rodrigues",
-    role: "Tests Analyst at Philips",
+    role: "Analista de Testes Philips",
     content: `
-      Ruan is an excellent professional, always concerned with doing the best and carrying out his activities with excellence.
-      He is a great developer, always with constructive criticism and great solutions, constantly demonstrating extensive knowledge.
-      I had the privilege of working with him on projects and he is a person who is great at working as a team, as he is open to exchanging ideas and sharing knowledge, always adding, adding and contributing to the team.
+      O Ruan é um excelente profissional, sempre preocupado em fazer o melhor e realizar as suas atividades com excelência.
+      Ele é um ótimo desenvolvedor, sempre com criticas construtivas e ótimas soluções, constantemente demonstrando amplo conhecimento.
+      Tive o privilégio de atuar com ele em projetos e é uma pessoa que é ótima para trabalhar em equipe, pois é aberto a trocas de ideias e ao compartilhamento de conhecimento, sempre somando, agregando e contribuindo com o time.
       [...]
-      First-rate professional, who has a bright future ahead and those who can work with him, will certainly have a great experience.
+      Profissional de primeira linha, que tem um futuro brilhante pela frente e aqueles que puderem trabalhar com ele, certamente terão uma grande experiência.
       [...]
     `
   },
   {
     name: "Vilson Moro",
-    role: "Professor at UDESC",
+    role: "Professor na UDESC",
     content: `
-      I worked as a professor at Ruan, while he was studying Computer Technician at CedupHH. He is a person with a great interpersonal relationship. 
-      They have an attitude, they don't expect things to happen, they actively participate. He always sought to achieve excellence in all proposed activities. 
-      In classes, he always tried to do more than what was proposed in class. Always questioning, seeking to innovate in the proposal of solutions to the problems presented.
+      Atuei como professor do Ruan, enquanto ele cursava o Técnico de Informática no CedupHH. É uma pessoa com um ótimo relacionamento interpessoal. 
+      Tem atitude, não espera as coisas acontecerem, ele participa ativamente. Procurava sempre atingir a excelência em todas as atividades propostas. 
+      Nas aulas, sempre procurava fazer, além do que era proposto em sala. Sempre questionador, procurando inovar na proposta de soluções para os problemas apresentados. 
     `
   },
   {
     name: "Brigiane Cardoso",
-    role: "Tests Analyst at Philips",
+    role: "Analista de Testes na Philips",
     content: `
-      I worked with Ruan on a project, Ruan besides being a great programmer is always concerned with helping us create a better quality product.
+      Trabalhei com Ruan num projeto de Lei de proteção de dados, Ruan além de ser um ótimo programador está sempre preocupado com a auxiliar para juntos criarmos um produto de mais qualidade.
     `
   }
 ]
 
 export const awardsAndRecongition = [
   {
-    title: "Revelation Project",
+    title: "Projeto Revelação",
     institution: "Comunidade Hackathon Shift",
-    content: "My teams and I were awarded in the category of Revelation Projects of the year with OpaFood and Konectando projects."
+    content: "Eu e minhas equipes fomos premiados na categoria Projetos Revelação do ano com os projetos OpaFood e Konectando."
   },
   {
     title: "Top 3",
     institution: "NASA Space Apps COVID-19 Challenge",
-    content: 'We developed a project that was among the 3 finalists of the NASA Space Apps COVID-19 Challenge "The Isolation Solution" challenge."'
+    content: 'Desenvolvemos um projeto que ficou entre os 3 melhores do Desafio COVID-19 do NASA Space Apps "The Isolation Solution". "'
   },
   {
-    title: "Connecty Pay Challenge Winner",
+    title: "Vencedor do Desafio Connecty Pay",
     institution: "Hack Pela Gastronomia",
-    content: "We have developed a complete solution for restaurants thinking about user experience, safety during pandemic times, sustainability and agility."
+    content: "Desenvolvemos uma solução completa para restaurantes pensando na experiência do usuário, segurança em tempos de pandemia, sustentabilidade e agilidade."
   },
   {
-    title: "Second Place",
+    title: "Segundo Lugar",
     institution: "Inter Hack Shift",
-    content: "With a sustainable and accessible electronic point project, my team and I reached second place in this hackathon.",
+    content: "Com um projeto de ponto eletrônico sustentável e acessível, minha equipe e eu alcançamos o segundo lugar neste hackathon.",
     hidden: true
   },
   {
-    title: "Maximum Grade",
-    institution: "Final Paper",
-    content: "I obtained maximum grade in my final paper of the computer technician course.",
+    title: "Nota Máxima",
+    institution: "TCC",
+    content: "Obtive nota máxima no meu trabalho de conclusão de curso de técnico em informática.",
     hidden: true
   },
   {
-    title: "Winner",
+    title: "Vencedor",
     institution: "Hackathon Shift Smart Cities",
-    content: "This was my first hackathon, where I developed a small solution with the team to track stolen vehicles.",
+    content: "Este foi meu primeiro hackathon, onde desenvolvi uma pequena solução com a equipe para rastrear veículos roubados.",
     hidden: true
   }
 ]

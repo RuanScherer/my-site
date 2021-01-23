@@ -52,7 +52,7 @@ const Project = () => {
           </div>
           <div className="flex items-center space-x-4">
             <small className="px-3 py-0.5 rounded-full bg-black text-white text-sm md:text-base fit-content">{project.type}</small>
-            { project.soon && <small className="px-3 py-0.5 rounded-full bg-black text-white text-sm md:text-base fit-content">Coming Soon</small> }
+            { project.soon && <small className="px-3 py-0.5 rounded-full bg-black text-white text-sm md:text-base fit-content">Em Breve</small> }
             <Link href={project.repository}>
               <a target="_blank" title="GitHub">
                 <img 
@@ -81,7 +81,7 @@ const Project = () => {
 
       <motion.section {...opacityAnimation} className="pt-52 space-y-12 lg:w-8/12 xl:w-8/12">
         <h1 className="text-3xl md:text-4xl font-extrabold relative">
-          Understanding the idea
+          Entendendo a ideia
         </h1>
 
         <div className="flex flex-col gap-8 md:gap-12 text-lg md:text-xl leading-relaxed font-medium text-justify">
@@ -91,7 +91,7 @@ const Project = () => {
 
       <motion.section {...opacityAnimation} className="pt-52 space-y-12 flex flex-col items-end lg:w-8/12 xl:w-8/12 ml-auto">
         <h1 className="text-3xl md:text-4xl font-extrabold relative w-full text-right">
-          Made with
+          Feito com
         </h1>
 
         <ul className="flex flex-wrap items-center justify-end gap-14 leading-relaxed font-bold text-lg md:text-xl list-none w-full">
@@ -107,13 +107,15 @@ const Project = () => {
 
       <motion.section {...opacityAnimation} className="pt-52 space-y-12 lg:w-8/12 xl:w-8/12">
         <h1 className="text-3xl md:text-4xl font-extrabold relative">
-          How about building something together?
+          Que tal construir algo juntos?
         </h1>
 
         <p className="text-lg md:text-xl leading-relaxed font-medium text-justify">
-          I love working with people who share the same passion for technology. Are you one of those people? 
+          Adoro trabalhar com pessoas que compartilham a mesma paixão por tecnologia.
+          <br/>
+          Você é uma dessas pessoas?
           <Link href="https://wa.link/tgjlij">
-            <a className="text-primary font-bold hover:opacity-70 transition">{' '}Let's work together!</a>
+            <a className="text-primary font-bold hover:opacity-70 transition">{' '}Vamos trabalhar juntos!</a>
           </Link>
         </p>
       </motion.section>
