@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import WhatsAppFAB from '../components/WhatsAppFAB'
+import WorkTogether from '../components/WorkTogether'
 import { skills, projects, socialLinks, recommendations, awardsAndRecongition, about, jobs } from '../data/'
 import { motion } from 'framer-motion'
 import { opacityAnimation } from '../constants'
@@ -211,6 +212,8 @@ export default function Home() {
           )}
         </ul>
       </motion.section>
+
+      <WorkTogether/>
     </>
   )
 }
