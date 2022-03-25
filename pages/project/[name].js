@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import WhatsAppFAB from '../../components/WhatsAppFAB'
 import WorkTogether from '../../components/WorkTogether'
 import { projects } from '../../data/'
 import { motion } from 'framer-motion'
@@ -33,8 +32,6 @@ const Project = () => {
 
   return (
     <div className="my-8">
-      <WhatsAppFAB />
-
       <main id="main" className="grid grid-cols-1 md:grid-cols-7 gap-6 min-h-screen">
         <motion.div {...opacityAnimation} className="flex flex-col justify-center space-y-6 col-span-4 text-4xl md:text-6xl font-bold leading-snug">
           <div className="flex items-center justify-between mb-5">

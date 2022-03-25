@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { useState } from "react"
-import WhatsAppFAB from '../components/WhatsAppFAB'
 import WorkTogether from '../components/WorkTogether'
 import { skills, projects, socialLinks, recommendations, awardsAndRecongition, about, jobs } from '../data/'
 import { motion } from 'framer-motion'
@@ -11,64 +10,49 @@ export default function Home() {
 
   return (
     <>
-      <WhatsAppFAB />
+      <motion.main
+        id="main"
+        className="flex flex-col items-center justify-center gap-y-4 min-h-screen"
+        style={{ backgroundImage: "url('/images/circles-outlined-background.svg')", backgroundSize: "cover" }}
+        {...opacityAnimation}
+      >
+        <img 
+          className="rounded-full border-2 border-gray-200 shadow-lg mt-12" 
+          width="100" 
+          height="100" 
+          src="/images/me.jpeg" 
+          alt="Ruan Scherer"
+        />
 
-      <motion.main {...opacityAnimation} id="main" className="grid grid-cols-1 lg:grid-cols-7 gap-6 min-h-screen">
-        <div className="flex flex-col justify-center space-y-6 col-span-4 text-2xl md:text-4xl font-bold">
-          <div className="flex items-center space-x-4">
-            <img 
-              className="rounded-full" 
-              width="80" 
-              height="80" 
-              src="/images/me.jpeg" 
-              alt="Ruan Scherer"
-            />
-            { socialLinks.map(link => (
-                <Link href={link.href} key={link.title}>
-                  <a target="_blank" title={link.title}>
-                    <img 
-                      className="cursor-pointer hover:opacity-75 transition" 
-                      width="30" 
-                      height="30" 
-                      src={`/images/${link.image}`} 
-                      alt={link.title}
-                    />
-                  </a>
-                </Link>
-              )
-            )}
-          </div>
-          <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
-            <img 
-              className="mr-2 inline-block align-middle" 
-              width="40" 
-              height="40" 
-              src="/images/hi.png" 
-              alt="Hi Emoji"
-            />
-            Olá, meu nome é Ruan.
-          </div>
-          <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
-            Sou <span className="text-primary">{'<Programador/>'}</span> Full Stack, acadêmico e trabalho na Philips.
-          </div>
-          <div className="p-5 shadow-xl rounded-md fit-content leading-snug">
-            Role para baixo e deixe eu me apresentar melhor
-            <img 
-              className="ml-2 inline-block align-middle" 
-              width="40" 
-              height="40" 
-              src="/images/smile.png" 
-              alt="Smile Emoji"
-            />
-          </div>
-        </div>
+        <h2 className="text-lg md:text-xl xl:text-2xl mt-2">
+          Hi, I'm <span className="font-bold">Ruan</span>!
+        </h2>
 
-        <div className="hidden lg:flex items-center justify-center col-span-3">
-          <img 
-            className="w-full"
-            src="/images/techs.svg"
-            alt="Technologies logo"
-          />
+        <h1 className="mt-2 mb-8 text-center text-3xl md:text-4xl xl:text-5xl font-semibold">
+          I can help you to build
+          <br/>
+          <span className="font-bold">amazing modern software.</span>
+        </h1>
+        
+        <i className="mt-4 text-md lg:text-lg xl:text-xl font-medium text-center text-gray-600">
+          {'<Senior Fullstack Developer/>'}
+        </i>
+
+        <div className="flex align-center gap-4">
+          { socialLinks.map(link => (
+              <Link href={link.href} key={link.title}>
+                <a target="_blank" title={link.title}>
+                  <img 
+                    className="cursor-pointer hover:opacity-75 transition" 
+                    width="30" 
+                    height="30" 
+                    src={`/images/${link.image}`} 
+                    alt={link.title}
+                  />
+                </a>
+              </Link>
+            )
+          )}
         </div>
       </motion.main>
 

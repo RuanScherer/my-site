@@ -1,7 +1,7 @@
 export const menuLinks = [
   {
     href: "about-me",
-    name: "Sobre mim"
+    name: "About me"
   },
   {
     href: "skills",
@@ -9,19 +9,19 @@ export const menuLinks = [
   },
   {
     href: "where-i-worked",
-    name: "Onde trabalhei"
+    name: "Experiences"
   },
   {
     href: "say-about-me",
-    name: "Recomendações"
+    name: "Recommendations"
   },
   {
     href: "awards-recognition",
-    name: "Prêmios e Reconhecimentos"
+    name: "Achievements"
   },
   {
     href: "projects",
-    name: "Projetos"
+    name: "Projects"
   }
 ]
 
@@ -247,7 +247,7 @@ export const socialLinks = [
   },
   {
     href: "/documents/Ruan-Scherer.pdf",
-    title: "Currículo",
+    title: "Resume",
     image: 'document.png'
   }
 ]
