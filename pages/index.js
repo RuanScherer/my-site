@@ -4,6 +4,7 @@ import WorkTogether from '../components/WorkTogether'
 import { skills, projects, socialLinks, recommendations, awardsAndRecongition, about, jobs } from '../data/'
 import { motion } from 'framer-motion'
 import { opacityAnimation } from '../constants'
+import { CustomContainer } from "../components/CustomContainer"
 
 export default function Home() {
   const [seeMoreAwardsAndRecongition, setSeeMoreAwardsAndRecongition] = useState(false)
@@ -12,48 +13,53 @@ export default function Home() {
     <>
       <motion.main
         id="main"
-        className="flex flex-col items-center justify-center gap-y-4 min-h-screen"
-        style={{ backgroundImage: "url('/images/circles-outlined-background.svg')", backgroundSize: "cover" }}
+        className="min-h-screen flex flex-col justify-center"
+        style={{
+          backgroundImage: "url('/images/circles-outlined-background.svg')",
+          backgroundSize: "cover"
+        }}
         {...opacityAnimation}
       >
-        <img 
-          className="rounded-full border-2 border-gray-200 shadow-lg mt-12" 
-          width="100" 
-          height="100" 
-          src="/images/me.jpeg" 
-          alt="Ruan Scherer"
-        />
+        <CustomContainer className="flex flex-col items-center justify-center gap-y-4">
+          <img 
+            className="rounded-full border-2 border-gray-200 shadow-lg mt-12" 
+            width="100" 
+            height="100" 
+            src="/images/me.jpeg" 
+            alt="Ruan Scherer"
+          />
 
-        <h2 className="text-lg md:text-xl xl:text-2xl mt-2">
-          Hi, I'm <span className="font-bold">Ruan</span>!
-        </h2>
+          <h2 className="bg-white text-lg md:text-xl xl:text-2xl mt-2">
+            Hi, I'm <span className="font-bold">Ruan</span>!
+          </h2>
 
-        <h1 className="mt-2 mb-8 text-center text-3xl md:text-4xl xl:text-5xl font-semibold">
-          I can help you to build
-          <br/>
-          <span className="font-bold">amazing modern software.</span>
-        </h1>
-        
-        <i className="mt-4 text-md lg:text-lg xl:text-xl font-medium text-center text-gray-600">
-          {'<Senior Fullstack Developer/>'}
-        </i>
+          <h1 className="bg-white mt-2 mb-8 text-center text-3xl md:text-4xl xl:text-5xl font-semibold">
+            I can help you to build
+            <br/>
+            <span className="font-bold">amazing modern software.</span>
+          </h1>
+          
+          <i className="bg-white mt-4 text-md lg:text-lg xl:text-xl font-medium text-center" style={{ color: "var(--gray-100)" }}>
+            {'<Senior Fullstack Developer/>'}
+          </i>
 
-        <div className="flex align-center gap-4">
-          { socialLinks.map(link => (
-              <Link href={link.href} key={link.title}>
-                <a target="_blank" title={link.title}>
-                  <img 
-                    className="cursor-pointer hover:opacity-75 transition" 
-                    width="30" 
-                    height="30" 
-                    src={`/images/${link.image}`} 
-                    alt={link.title}
-                  />
-                </a>
-              </Link>
-            )
-          )}
-        </div>
+          <div className="flex align-center gap-4">
+            { socialLinks.map(link => (
+                <Link href={link.href} key={link.title}>
+                  <a target="_blank" title={link.title}>
+                    <img 
+                      className="cursor-pointer hover:opacity-75 transition" 
+                      width="30" 
+                      height="30" 
+                      src={`/images/${link.image}`} 
+                      alt={link.title}
+                    />
+                  </a>
+                </Link>
+              )
+            )}
+          </div>
+        </CustomContainer>
       </motion.main>
 
       <motion.section {...opacityAnimation} id="about-me" className="pt-36 space-y-12">

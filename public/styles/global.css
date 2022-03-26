@@ -1,5 +1,14 @@
+html {
+  --blue-900: #150DFB;
+
+  --dark-blue-900: #0C0A1F;
+
+  --gray-100: #A3A8BF;
+}
+
 * {
   outline: none !important;
+  color: var(--dark-blue-900);
 }
 
 .fit-content {

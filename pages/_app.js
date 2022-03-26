@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="/styles/global.css"/>
       </Head>
       <Header />
-      <div className="container px-5 sm:mx-auto mb-4">
+      <div className="sm:mx-auto mb-4">
         <Component {...pageProps}/>
         <Footer/>
       </div>

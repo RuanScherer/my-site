@@ -32,10 +32,10 @@ const Header = () => {
     >
       <div className="container flex justify-center items-center mx-auto p-5">
 
-        <nav className="hidden md:flex flex-wrap space-x-6 text-lg">
+        <nav className="hidden md:flex flex-wrap space-x-6 text-lg font-semibold">
           { menuLinks.map(link => (
               <Link href={`#${link.href}`}>
-                <a className="border-b-2 border-transparent hover:border-secondary hover:text-secondary transform hover:translate-y-0.5 transition duration-200">
+                <a className="hover:opacity-70 transition duration-200">
                   {link.name}
                 </a>
               </Link>
