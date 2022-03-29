@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <motion.header
-      className={`sticky w-full z-10 top-0 bg-transparent ${scroll > 0 && 'md:shadow md:bg-white'} ${router.pathname !== '/' && 'hidden'}`}
+      className={`sticky w-full h-0 md:h-auto z-10 top-0 bg-transparent ${scroll > 0 && 'md:shadow md:bg-white'} ${router.pathname !== '/' && 'hidden'}`}
       {...opacityAnimation}
     >
       <div className="container flex justify-center items-center mx-auto p-5">
