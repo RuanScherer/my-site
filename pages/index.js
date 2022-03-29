@@ -117,28 +117,13 @@ export default function Home() {
           </h2>
           <h3 className="mt-2 mb-12 text-sm md:text-base xl:text-lg">Click the cards to see more</h3>
 
-          <ul className="flex flex-wrap md:grid md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-8 font-bold text-lg md:text-xl list-none">
-            <SkillCard title="Frontend" skills={["React.js", "Vue.js", "CSS Modules"]}/>
-            <SkillCard title="Backend" />
-            <SkillCard title="Tools" />
-            <SkillCard title="Soft" />
-            {/* { skills.map(skill => (
-                <li key={skill.name}>
-                  <img 
-                    className="w-28 md:w-40" 
-                    src={`/images/${skill.image}`} 
-                    alt={skill.name}
-                  />
-                  <legend className="text-center">{skill.name}</legend>
-                  <div className="flex items-center justify-between gap-2">
-                    <div className="bg-gray-100 h-3 w-full rounded-lg relative">
-                      <div className="absolute top-0 left-0 h-3 rounded-lg" style={{ width: skill.level + '%', backgroundColor: skill.color }}></div>
-                    </div>
-                    <small className="text-sm">{skill.level}%</small>
-                  </div>
-                </li>
-              )
-            )} */}
+          <ul className="flex flex-wrap w-full md:grid md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8 font-bold text-lg md:text-xl list-none">
+            <SkillCard title="Frontend" skills={["React.js", "Next.js", "Javascript & Typescript", "HTML & CSS", "Flutter"]}/>
+            <SkillCard title="Backend" skills={["Java", "Spring", "Node.js", "Javascript & Typescript"]} />
+            <SkillCard title="Databases" skills={["Oracle database", "MySQL", "MongoDB"]}/>
+            <SkillCard title="Tools" skills={["GIT", "JIRA"]} />
+            <SkillCard title="Soft" skills={["Continuous learning culture", "Good communication", "Love for teamwork", "Love for changes", "Like challenges"]} />
+            <SkillCard title="General" skills={["Agile methodologies", "Design patterns", "REST & SOAP", "Unit tests", "CI"]} />
           </ul>
         </CustomContainer>
       </motion.section>
