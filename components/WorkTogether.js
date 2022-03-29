@@ -19,11 +19,11 @@ const WorkTogether = () => {
           </h1>
 
           <div className="space-y-4 md:space-y-2" style={{ color: "var(--gray-100)" }}>
-            <p className="text-lg md:text-xl text-center text-gray-100 leading-relaxed font-medium">
+            <p className="text-base md:text-lg xl:text-xl text-center text-gray-100 leading-relaxed font-medium">
               I like so much to work with people who share the same passion: technology.
             </p>
 
-            <p className="text-lg md:text-xl text-center text-gray-100 leading-relaxed font-medium">
+            <p className="text-base md:text-lg xl:text-xl text-center text-gray-100 leading-relaxed font-medium">
               Are you one of those people?
               <Link href="https://wa.link/tgjlij">
                 <a className="font-bold hover:opacity-80 transition">
