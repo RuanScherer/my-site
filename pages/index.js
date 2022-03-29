@@ -5,6 +5,7 @@ import { skills, projects, socialLinks, recommendations, awardsAndRecongition, a
 import { motion } from 'framer-motion'
 import { opacityAnimation } from '../constants'
 import { CustomContainer } from "../components/CustomContainer"
+import { SkillCard } from "../components/SkillCard"
 
 export default function Home() {
   const [seeMoreAwardsAndRecongition, setSeeMoreAwardsAndRecongition] = useState(false)
@@ -69,8 +70,13 @@ export default function Home() {
         {...opacityAnimation}
       >
         <CustomContainer className="py-10 md:py-12 lg:py-14 xl:py-16">
-          <h2 className="mb-8 text-lg md:text-xl xl:text-2xl font-semibold w-full text-center" style={{ color: "var(--gray-100)" }}>
-            My experience
+          <h2 className="flex items-center justify-center mb-8 text-3xl md:text-4xl xl:text-5xl font-semibold" style={{ color: "var(--gray-100)" }}>
+            02+
+            <span className="ml-2 text-sm md:text-base xl:text-lg text-left" style={{ color: "var(--gray-100)", lineHeight: 1 }}>
+              years of
+              <br/>
+              experience
+            </span>
           </h2>
 
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 text-lg md:text-xl leading-relaxed font-medium">
@@ -104,30 +110,37 @@ export default function Home() {
         </CustomContainer>
       </motion.section>
 
-      <motion.section {...opacityAnimation} id="skills" className="pt-52 space-y-12 flex flex-col items-end">
-        <h1 className="text-3xl md:text-4xl font-extrabold relative w-full text-right">
-          Minhas principais skills
-        </h1>
+      <motion.section id="skills" {...opacityAnimation}>
+        <CustomContainer className="pt-52 flex flex-col items-center">
+          <h2 className="text-2xl md:text-3xl xl:text-4xl font-extrabold">
+            My main skills
+          </h2>
+          <h3 className="mt-2 mb-12 text-sm md:text-base xl:text-lg">Click the cards to see more</h3>
 
-        <ul className="flex flex-wrap lg:grid lg:grid-cols-5 items-center justify-center gap-16 leading-relaxed font-bold text-lg md:text-xl list-none">
-          { skills.map(skill => (
-              <li key={skill.name}>
-                <img 
-                  className="w-28 md:w-40" 
-                  src={`/images/${skill.image}`} 
-                  alt={skill.name}
-                />
-                <legend className="text-center">{skill.name}</legend>
-                <div className="flex items-center justify-between gap-2">
-                  <div className="bg-gray-100 h-3 w-full rounded-lg relative">
-                    <div className="absolute top-0 left-0 h-3 rounded-lg" style={{ width: skill.level + '%', backgroundColor: skill.color }}></div>
+          <ul className="flex flex-wrap md:grid md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-8 font-bold text-lg md:text-xl list-none">
+            <SkillCard title="Frontend" skills={["React.js", "Vue.js", "CSS Modules"]}/>
+            <SkillCard title="Backend" />
+            <SkillCard title="Tools" />
+            <SkillCard title="Soft" />
+            {/* { skills.map(skill => (
+                <li key={skill.name}>
+                  <img 
+                    className="w-28 md:w-40" 
+                    src={`/images/${skill.image}`} 
+                    alt={skill.name}
+                  />
+                  <legend className="text-center">{skill.name}</legend>
+                  <div className="flex items-center justify-between gap-2">
+                    <div className="bg-gray-100 h-3 w-full rounded-lg relative">
+                      <div className="absolute top-0 left-0 h-3 rounded-lg" style={{ width: skill.level + '%', backgroundColor: skill.color }}></div>
+                    </div>
+                    <small className="text-sm">{skill.level}%</small>
                   </div>
-                  <small className="text-sm">{skill.level}%</small>
-                </div>
-              </li>
-            )
-          )}
-        </ul>
+                </li>
+              )
+            )} */}
+          </ul>
+        </CustomContainer>
       </motion.section>
 
       <motion.section {...opacityAnimation} id="say-about-me" className="pt-52 space-y-12 flex flex-col">
