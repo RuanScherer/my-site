@@ -10,7 +10,11 @@ export const SkillCard = ({ title, skills }) => {
   }
 
   return (
-    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" containerClassName="w-full">
+    <ReactCardFlip
+      isFlipped={isFlipped}
+      flipDirection="horizontal"
+      containerClassName="w-full"
+    >
       <div
         className="flex flex-col items-stretch justify-center p-5 h-64 rounded-xl shadow-xl text-center cursor-pointer"
         style={{ backgroundColor: "var(--blue-900)" }}
