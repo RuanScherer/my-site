@@ -30,7 +30,7 @@ export default function Home() {
           />
 
           <h2 className="bg-white text-lg md:text-xl xl:text-2xl mt-2">
-            Hi, I'm <span className="font-bold">Ruan</span>!
+            Hi, I'm <span className="font-bold" style={{ color: "var(--blue-900)" }}>Ruan</span>!
           </h2>
 
           <h1 className="bg-white mt-2 mb-8 text-center text-3xl md:text-4xl xl:text-5xl font-semibold">
@@ -62,16 +62,46 @@ export default function Home() {
         </CustomContainer>
       </motion.main>
 
-      <motion.section {...opacityAnimation} id="about-me" className="pt-36 space-y-12">
-        <h1 className="text-3xl md:text-4xl font-extrabold relative">
-          Sobre mim
-        </h1>
+      <motion.section
+        id="where-i-worked"
+        className="shadow-xl"
+        style={{ backgroundColor: "var(--dark-blue-900)" }}
+        {...opacityAnimation}
+      >
+        <CustomContainer className="py-10 md:py-12 lg:py-14 xl:py-16">
+          <h2 className="mb-8 text-lg md:text-xl xl:text-2xl font-semibold w-full text-center" style={{ color: "var(--gray-100)" }}>
+            My experience
+          </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 text-lg md:text-xl leading-relaxed font-medium text-justify">
-          <p className="md:col-start-1">{about[0]}</p>
-          <p className="order-3 md:order-none md:col-start-2">{about[1]}</p>
-          <p className="md:col-start-1">{about[2]}</p>
-        </div>
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 text-lg md:text-xl leading-relaxed font-medium">
+            <img src="/images/paytrack.svg" alt="Paytrack logo" className="w-32 md:w-36 xl:w-40" />
+            <img src="/images/philips.svg" alt="Philips logo" className="w-32 md:w-36 xl:w-40" />
+            <img src="/images/autokeet.svg" alt="Autokeet logo" className="w-32 md:w-36 xl:w-40" />
+            <img src="/images/white-logo.svg" alt="My logo" className="w-32 md:w-36 xl:w-40" />
+          </div>
+        </CustomContainer>
+      </motion.section>
+
+      <motion.section
+        id="about-me"
+        className="pt-24 space-y-12"
+        {...opacityAnimation}
+      >
+        <CustomContainer className="grid grid-cols-1 md:grid-cols-6 gap-8 md:gap-10">
+          <div className="col-span-3 xl:col-span-4 m-auto">
+            <h1 className="mb-4 text-2xl md:text-3xl xl:text-4xl font-extrabold">
+              About me
+            </h1>
+
+            <div className="flex flex-col gap-4 md:gap-6 md:text-lg xl:text-xl leading-relaxed font-medium text-justify">
+              <p className="md:col-start-1">{about[0]}</p>
+              <p className="order-3 md:order-none md:col-start-2">{about[1]}</p>
+              <p className="md:col-start-1">{about[2]}</p>
+            </div>
+          </div>
+
+          <img src="/images/me-home-office.jpeg" alt="Me in home office" className="col-span-3 xl:col-span-2 rounded-2xl m-auto shadow-xl" />
+        </CustomContainer>
       </motion.section>
 
       <motion.section {...opacityAnimation} id="skills" className="pt-52 space-y-12 flex flex-col items-end">
@@ -94,27 +124,6 @@ export default function Home() {
                   </div>
                   <small className="text-sm">{skill.level}%</small>
                 </div>
-              </li>
-            )
-          )}
-        </ul>
-      </motion.section>
-
-      <motion.section {...opacityAnimation} id="where-i-worked" className="pt-52 space-y-12 flex flex-col">
-        <h1 className="text-3xl md:text-4xl font-extrabold relative w-full mb-8 lg:mb-20">
-          Onde trabalhei
-        </h1>
-
-        <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 leading-relaxed font-medium text-lg md:text-xl list-none text-justify">
-          { jobs.map(job => (
-              <li className="relative pl-12">
-                <img 
-                  className={`absolute ${job.imageSize || "-left-4 -top-14 md:-top-18 lg:-left-12 lg:-top-28 xl:-left-12 xl:-top-2/4 w-28 lg:w-52"} opacity-20`}
-                  src={`/images/${job.image}`}
-                  alt={`${job.name} Logo`}
-                />
-                <h2 className="text-2xl md:text-3xl font-extrabold mb-5">{job.name}</h2>
-                <p>{job.content}</p>
               </li>
             )
           )}

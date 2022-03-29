@@ -27,13 +27,13 @@ export const menuLinks = [
 
 export const about = [
   `
-    Tenho 18 anos de idade, sou formado como Técnico em Informática e curso Sistemas de Informação na Uniasselvi em Blumenau-SC.
-    Além disso, estou sempre estudando desenvolvimento de aplicações web e mobile porque eu amo isso.
+    I am a 19 years old senior fullstack developer, Informatics Technician, studying Information Systems at Uniasselvi in Blumenau-SC.
+    I am always studying about web and mobile application development (because I love it).
   `,
-  `Também gosto e tenho trabalhado em projetos freelance, ajudando as pessoas com soluções e me divertindo com o que faço.`,
+  `Also, I like and have worked on freelance projects, helping people with smart solutions and being happy with what I do.`,
   `
-    Iniciei profissionalmente há nem tanto tempo, em março de 2020.
-    Desde então, eu tive oportunidades de trabalhar com profissionais excelentes e muito experientes, que sem dúvidas contribuiram muito para o meu desenvolvimento.
+    I started professionally not too much ago, on March 2020.
+    Since then, I had a lot of opportunities to work with exclent and experient professionals who contributed so much for my own development.
   `
 ]
 
