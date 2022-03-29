@@ -1,25 +1,39 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { opacityAnimation } from '../constants'
+import { CustomContainer } from './CustomContainer'
 
 const WorkTogether = () => {
   return (
-    <motion.section {...opacityAnimation} className="pt-52 space-y-12 lg:w-8/12 xl:w-8/12">
-      <h1 className="text-3xl md:text-4xl font-extrabold relative">
-        Que tal construir algo juntos?
-      </h1>
+    <motion.section className="pt-24" {...opacityAnimation}>
+      <CustomContainer>
+        <div 
+          className="mx-auto space-y-4 rounded-xl shadow-xl p-5 md:p-6 xl:p-8 transform hover:-translate-y-1 transition transition-250"
+          style={{
+            backgroundColor: "var(--blue-900)",
+            width: "fit-content"
+          }}
+        >
+          <h1 className="text-2xl md:text-3xl xl:text-4xl text-center text-white font-extrabold">
+            Want to build something nice?
+          </h1>
 
-      <div className="space-y-4 md:space-y-2">
-        <p className="text-lg md:text-xl leading-relaxed font-medium text-justify">
-          Adoro trabalhar com pessoas que compartilham a mesma paixão por tecnologia.
-        </p>
-        <p className="text-lg md:text-xl leading-relaxed font-medium text-justify">
-          Você é uma dessas pessoas?
-          <Link href="https://wa.link/tgjlij">
-            <a className="text-primary font-bold hover:opacity-70 transition">{' '}Vamos trabalhar juntos!</a>
-          </Link>
-        </p>
-      </div>
+          <div className="space-y-4 md:space-y-2" style={{ color: "var(--gray-100)" }}>
+            <p className="text-lg md:text-xl text-center text-gray-100 leading-relaxed font-medium">
+              I like so much to work with people who share the same passion: technology.
+            </p>
+
+            <p className="text-lg md:text-xl text-center text-gray-100 leading-relaxed font-medium">
+              Are you one of those people?
+              <Link href="https://wa.link/tgjlij">
+                <a className="font-bold hover:opacity-80 transition">
+                  {' '}Let's work together!
+                </a>
+              </Link>
+            </p>
+          </div>
+        </div>
+      </CustomContainer>
     </motion.section>
   )
 }
