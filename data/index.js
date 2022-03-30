@@ -1,15 +1,15 @@
 export const menuLinks = [
   {
+    href: "where-i-worked",
+    name: "Experience"
+  },
+  {
     href: "about-me",
     name: "About me"
   },
   {
     href: "skills",
     name: "Skills"
-  },
-  {
-    href: "where-i-worked",
-    name: "Experiences"
   },
   {
     href: "say-about-me",
