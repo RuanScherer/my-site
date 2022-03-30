@@ -36,7 +36,7 @@ const Footer = () => {
         
         <Link href={`${router.asPath}#main`}>
           <a className="text-sm md:text-base font-medium text-gray-400 hover:opacity-80 transition duration-200">
-            Voltar ao topo
+            Back to top
           </a>
         </Link>
       </CustomContainer>
