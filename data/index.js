@@ -274,36 +274,36 @@ export const recommendations = [
 
 export const awardsAndRecongition = [
   {
-    title: "Projeto Revelação",
+    title: "Revelation Project",
     institution: "Hackathon Shift Community",
-    content: "Eu e minhas equipes fomos premiados na categoria Projetos Revelação do ano com os projetos OpaFood e Konectando."
+    content: 'My teams and I were awarded in the "Revelation Projects" category with the OpaFood and Konectando projects.'
   },
   {
     title: "Top 3",
     institution: "NASA Space Apps COVID-19 Challenge",
-    content: 'Desenvolvemos um projeto que ficou entre os 3 melhores do Desafio COVID-19 do NASA Space Apps "The Isolation Solution". "'
+    content: 'We developed a project that was among the top 3 of the NASA Space Apps COVID-19 Challenge "The Isolation Solution".'
   },
   {
-    title: "Vencedor do Desafio Connecty Pay",
+    title: "Connecty Pay Challenge Winner",
     institution: "Hack Pela Gastronomia",
-    content: "Desenvolvemos uma solução completa para restaurantes pensando na experiência do usuário, segurança em tempos de pandemia, sustentabilidade e agilidade."
+    content: "We developed a complete solution for restaurants thinking about user experience, safety in times of pandemic, sustainablity and agilty."
   },
   {
     title: "Second place",
     institution: "Inter Hack Shift",
-    content: "Com um projeto de ponto eletrônico sustentável e acessível, minha equipe e eu alcançamos o segundo lugar neste hackathon.",
+    content: "With a sustainable and accessible electronic point project, my team and I achieved second place in this hackathon.",
     hidden: true
   },
   {
     title: "Maximum grade",
     institution: "TCC",
-    content: "Obtive nota máxima no meu trabalho de conclusão de curso de técnico em informática.",
+    content: "I got the maximum grade on my computer technician course conclusion work.",
     hidden: true
   },
   {
     title: "Winner",
     institution: "Hackathon Shift Smart Cities",
-    content: "Este foi meu primeiro hackathon, onde desenvolvi uma pequena solução com a equipe para rastrear veículos roubados.",
+    content: "That was my first hackathon, where my team and I developed a small solution to track stolen vehicles",
     hidden: true
   }
 ]
