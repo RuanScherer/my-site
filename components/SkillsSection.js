@@ -12,27 +12,27 @@ export const SkillsSection = () => {
         </h2>
 
         <ul className="flex flex-wrap items-center justify-center gap-2 md:w-3/4 xl:w-4/6 font-bold text-lg md:text-xl list-none">
-          <SkillChip skillName="HTML & CSS" backgroundColor="#e54c21" />
+          <SkillChip skillName="HTML & CSS" backgroundColor="#f74e28" />
           <SkillChip skillName="Javascript" backgroundColor="#f7df1e" />
-          <SkillChip skillName="Typescript" backgroundColor="#3178c6" />
+          <SkillChip skillName="Typescript" backgroundColor="#13b9fd" />
           <SkillChip skillName="Next.js" backgroundColor="#c4cccf" />
           <SkillChip skillName="React.js" backgroundColor="#61dafb" />
-          <SkillChip skillName="Node.js" backgroundColor="#7fc728" />
+          <SkillChip skillName="Node.js" backgroundColor="#00ed64" />
           <SkillChip skillName="Flutter" backgroundColor="#13b9fd" />
-          <SkillChip skillName="Java" backgroundColor="#d96901" />
+          <SkillChip skillName="Java" backgroundColor="#f74e28" />
           <SkillChip skillName="Spring" backgroundColor="#7fe96e" />
-          <SkillChip skillName="Oracle Database" backgroundColor="#e55844" />
-          <SkillChip skillName="MySQL" backgroundColor="#5aa4b9" />
+          <SkillChip skillName="Oracle Database" backgroundColor="#f74e28" />
+          <SkillChip skillName="MySQL" backgroundColor="#13b9fd" />
           <SkillChip skillName="MongoDB" backgroundColor="#00ed64" />
           <SkillChip skillName="Git" backgroundColor="#f74e28" />
-          <SkillChip skillName="Agile Methodologies" backgroundColor="#41aac5" />
-          <SkillChip skillName="Contiuous learning" backgroundColor="#04d361" />
-          <SkillChip skillName="Good communication" backgroundColor="#00b37e" />
-          <SkillChip skillName="Teamwork" backgroundColor="#13b9fd" />
+          <SkillChip skillName="Agile Methodologies" backgroundColor="#f7df1e" />
+          <SkillChip skillName="Contiuous learning" backgroundColor="#7fe96e" />
+          <SkillChip skillName="Good communication" backgroundColor="#61dafb" />
+          <SkillChip skillName="Teamwork" backgroundColor="#c4cccf" />
           <SkillChip skillName="Design patterns" backgroundColor="#f74e28" />
-          <SkillChip skillName="REST & SOAP" backgroundColor="#1196c4" />
-          <SkillChip skillName="Unit tests" backgroundColor="#ea5d68" />
-          <SkillChip skillName="CI" backgroundColor="#79a6d2" />
+          <SkillChip skillName="REST & SOAP" backgroundColor="#00ed64" />
+          <SkillChip skillName="Unit tests" backgroundColor="#61dafb" />
+          <SkillChip skillName="CI" backgroundColor="#c4cccf" />
         </ul>
       </CustomContainer>
     </motion.section>
