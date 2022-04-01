@@ -244,30 +244,30 @@ export const socialLinks = [
 export const recommendations = [
   {
     name: "Pablo Luiz Rodrigues",
-    role: "Analista de Testes Philips",
+    role: "Tests Analyst at Philips",
     content: `
-      O Ruan é um excelente profissional, sempre preocupado em fazer o melhor e realizar as suas atividades com excelência.
-      Ele é um ótimo desenvolvedor, sempre com criticas construtivas e ótimas soluções, constantemente demonstrando amplo conhecimento.
-      Tive o privilégio de atuar com ele em projetos e é uma pessoa que é ótima para trabalhar em equipe, pois é aberto a trocas de ideias e ao compartilhamento de conhecimento, sempre somando, agregando e contribuindo com o time.
+      Ruan is an excellent professional, always concerned with doing his best and carrying out his activities with excellence.
+      He's a great developer, always with constructive criticism and great solutions, constantly demonstrating extensive knowledge.
+      I had the privilege of working with him on projects and he's a person who is great to work in a team, as he's open to exchanging ideas and sharing knowledge, always adding and contributing to the team.
       [...]
-      Profissional de primeira linha, que tem um futuro brilhante pela frente e aqueles que puderem trabalhar com ele, certamente terão uma grande experiência.
+      A top-notch professional, who has a bright future ahead of him and those who can work with him will certainly have a great experience.
       [...]
     `
   },
   {
     name: "Vilson Moro",
-    role: "Professor na UDESC",
+    role: "Professor at UDESC",
     content: `
-      Atuei como professor do Ruan, enquanto ele cursava o Técnico de Informática no CedupHH. É uma pessoa com um ótimo relacionamento interpessoal. 
-      Tem atitude, não espera as coisas acontecerem, ele participa ativamente. Procurava sempre atingir a excelência em todas as atividades propostas. 
-      Nas aulas, sempre procurava fazer, além do que era proposto em sala. Sempre questionador, procurando inovar na proposta de soluções para os problemas apresentados. 
+      I worked as Ruan's teacher, while he was studying Computer Technician at Cedup Hermann Hering. He's a person with a great interpersonal relationship. 
+      He has an attitude, he doesn't wait for things to happen, he actively participates. He always sought to achieve excellence in all proposed activities. 
+      In class, he always tried to do more than what was proposed in class. Always questioning, seeking to innovate in the proposal of solutions for the presented problems.
     `
   },
   {
     name: "Brigiane Cardoso",
-    role: "Analista de Testes na Philips",
+    role: "Tests Analyst at Philips",
     content: `
-      Trabalhei com Ruan num projeto de Lei de proteção de dados, Ruan além de ser um ótimo programador está sempre preocupado com a auxiliar para juntos criarmos um produto de mais qualidade.
+      I worked with Ruan on a data protection law project, besides being a great programmer, Ruan is always concerned with helping us to create a better quality product together.
     `
   }
 ]

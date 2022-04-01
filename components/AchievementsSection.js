@@ -18,7 +18,7 @@ export const AchievementsSection = () => {
   return (
     <motion.section
       id="awards-recognition"
-      className="pt-52"
+      className="pt-32"
       {...opacityAnimation}
     >
       <CustomContainer className="flex flex-col items-center space-y-8">

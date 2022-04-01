@@ -6,7 +6,7 @@ import { SkillChip } from "./SkillChip"
 export const SkillsSection = () => {
   return (
     <motion.section id="skills" {...opacityAnimation}>
-      <CustomContainer className="pt-24 flex flex-col items-center">
+      <CustomContainer className="pt-32 flex flex-col items-center">
         <h2 className="mb-6 text-2xl md:text-3xl xl:text-4xl font-extrabold">
           My main skills
         </h2>

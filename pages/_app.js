@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import { AnimateSharedLayout } from 'framer-motion'
 import Header from "../components/Header";
-import "tailwindcss/tailwind.css";
 import Footer from '../components/Footer';
+import "tailwindcss/tailwind.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function MyApp({ Component, pageProps }) {
   return (

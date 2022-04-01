@@ -8,6 +8,7 @@ import { ExperienceBanner } from "../components/ExperienceBanner"
 import { OverviewAboutMe } from "../components/OverviewAboutMe"
 import { SkillsSection } from "../components/SkillsSection"
 import { AchievementsSection } from "../components/AchievementsSection"
+import { RecommendationsSection } from "../components/RecommendationsSection"
 
 export default function Home() {
   return (
@@ -20,27 +21,7 @@ export default function Home() {
 
       <SkillsSection />
 
-      <motion.section {...opacityAnimation} id="say-about-me" className="pt-52 space-y-12 flex flex-col">
-        <h1 className="text-center text-3xl md:text-4xl font-extrabold relative w-full mb-8 lg:mb-20">
-          O que dizem sobre mim
-        </h1>
-
-        <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 font-medium list-none">
-          { recommendations.map(recommendation => (
-              <li className="relative pl-12">
-                <img 
-                  className="absolute left-4 -top-8 lg:-left-0 lg:-top-20 w-20 lg:w-36 opacity-10" 
-                  src="/images/quote.svg" 
-                  alt="Quote"
-                />
-                <h2 className="text-2xl md:text-3xl font-extrabold">{recommendation.name}</h2>
-                <span className="text-lg md:text-xl text-gray-600">{recommendation.role}</span>
-                <p className="leading-relaxed text-lg md:text-xl text-justify mt-5">{recommendation.content}</p>
-              </li>
-            )
-          )}
-        </ul>
-      </motion.section>
+      <RecommendationsSection />
 
       <AchievementsSection />
 
