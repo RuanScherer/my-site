@@ -1,17 +1,15 @@
 import Link from "next/link"
-import { useState } from "react"
 import WorkTogether from '../components/WorkTogether'
-import { projects, recommendations, awardsAndRecongition } from '../data/'
+import { projects, recommendations } from '../data/'
 import { motion } from 'framer-motion'
 import { opacityAnimation } from '../constants'
 import { WelcomeSection } from "../components/WelcomeSection"
 import { ExperienceBanner } from "../components/ExperienceBanner"
 import { OverviewAboutMe } from "../components/OverviewAboutMe"
 import { SkillsSection } from "../components/SkillsSection"
+import { AchievementsSection } from "../components/AchievementsSection"
 
 export default function Home() {
-  const [seeMoreAwardsAndRecongition, setSeeMoreAwardsAndRecongition] = useState(false)
-
   return (
     <>
       <WelcomeSection />
@@ -44,35 +42,7 @@ export default function Home() {
         </ul>
       </motion.section>
 
-      <motion.section {...opacityAnimation} id="awards-recognition" className="pt-52 space-y-12 flex flex-col">
-        <h1 className="text-center text-3xl md:text-4xl font-extrabold relative w-full lg:mb-10">
-          Prêmios e reconhecimentos
-        </h1>
-
-        <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 font-medium list-none">
-          { awardsAndRecongition.map(item => (
-              <li className={`${(!seeMoreAwardsAndRecongition && item.hidden) && 'hidden'} lg:block relative pl-12 mt-8 lg:mt-10`}>
-                <img 
-                  className="absolute left-0 -top-10 lg:-left-7 lg:-top-12 w-24 lg:w-36 opacity-10" 
-                  src="/images/prize.svg" 
-                  alt="Prize"
-                />
-                <h2 className="text-2xl md:text-3xl font-extrabold">{item.title}</h2>
-                <span className="text-lg md:text-xl text-gray-600">{item.institution}</span>
-                <p className="leading-relaxed text-lg md:text-xl text-justify mt-5">{item.content}</p>
-              </li>
-            )
-          )}
-        </ul>
-
-        { !seeMoreAwardsAndRecongition &&
-          <button 
-            className="lg:hidden text-primary text-xl font-bold shadow-lg rounded-sm fit-content mx-auto px-5 py-2 transform transition hover:translate-y-1 hover:shadow-md hover:bg-gray-50"
-            onClick={() => setSeeMoreAwardsAndRecongition(true)}>
-            See more
-          </button>
-        }
-      </motion.section>
+      <AchievementsSection />
 
       <motion.section {...opacityAnimation} id="projects" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-center text-3xl md:text-4xl font-extrabold relative w-full ">

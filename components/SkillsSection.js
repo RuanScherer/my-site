@@ -1,6 +1,5 @@
 import { motion } from "framer-motion"
 import { CustomContainer } from "../components/CustomContainer"
-import { SkillCard } from "../components/SkillCard"
 import { opacityAnimation } from '../constants'
 import { SkillChip } from "./SkillChip"
 

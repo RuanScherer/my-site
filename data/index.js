@@ -275,7 +275,7 @@ export const recommendations = [
 export const awardsAndRecongition = [
   {
     title: "Projeto Revelação",
-    institution: "Comunidade Hackathon Shift",
+    institution: "Hackathon Shift Community",
     content: "Eu e minhas equipes fomos premiados na categoria Projetos Revelação do ano com os projetos OpaFood e Konectando."
   },
   {
@@ -289,19 +289,19 @@ export const awardsAndRecongition = [
     content: "Desenvolvemos uma solução completa para restaurantes pensando na experiência do usuário, segurança em tempos de pandemia, sustentabilidade e agilidade."
   },
   {
-    title: "Segundo Lugar",
+    title: "Second place",
     institution: "Inter Hack Shift",
     content: "Com um projeto de ponto eletrônico sustentável e acessível, minha equipe e eu alcançamos o segundo lugar neste hackathon.",
     hidden: true
   },
   {
-    title: "Nota Máxima",
+    title: "Maximum grade",
     institution: "TCC",
     content: "Obtive nota máxima no meu trabalho de conclusão de curso de técnico em informática.",
     hidden: true
   },
   {
-    title: "Vencedor",
+    title: "Winner",
     institution: "Hackathon Shift Smart Cities",
     content: "Este foi meu primeiro hackathon, onde desenvolvi uma pequena solução com a equipe para rastrear veículos roubados.",
     hidden: true
