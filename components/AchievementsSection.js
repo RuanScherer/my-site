@@ -21,10 +21,13 @@ export const AchievementsSection = () => {
       className="pt-32"
       {...opacityAnimation}
     >
-      <CustomContainer className="flex flex-col items-center space-y-8">
+      <CustomContainer className="flex flex-col items-center">
         <h1 className="text-center text-2xl md:text-3xl xl:text-4xl font-extrabold">
           Achievements
         </h1>
+        <h3 className="text-sm md:text-base xl:text-lg text-gray-500 text-center font-medium mb-8">
+          Click to turn the cards
+        </h3>
 
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-medium list-none w-full">
           { awardsAndRecongition.map(item => (

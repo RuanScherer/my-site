@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <motion.footer
-      className="py-10 mt-20"
+      className="py-10 mt-16"
       style={{ backgroundColor: "var(--dark-blue-900)" }}
       {...opacityAnimation}
     >
