@@ -11,7 +11,7 @@ export const AchievementsSection = () => {
   const router = useRouter()
 
   function handleToggleSeeMore() {
-    if (!seeMore) router.replace("#awards-recognition") 
+    if (seeMore) router.replace("#awards-recognition") 
     setSeeMore(!seeMore)
   }
 
