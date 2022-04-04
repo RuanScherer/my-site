@@ -10,6 +10,7 @@ import { SkillsSection } from "../components/SkillsSection"
 import { AchievementsSection } from "../components/AchievementsSection"
 import { RecommendationsSection } from "../components/RecommendationsSection"
 import { ExtrasSection } from "../components/ExtrasSection"
+import { CanHelpYouSection } from "../components/CanHelpYouSection"
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       <ExperienceBanner />
 
       <OverviewAboutMe />
+
+      <CanHelpYouSection />
 
       <SkillsSection />
 
