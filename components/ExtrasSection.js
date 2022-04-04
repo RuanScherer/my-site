@@ -18,7 +18,7 @@ export const ExtrasSection = () => {
           </p>
         </div>
 
-        <MediumCard />
+        <MediumCard className="col-span-3 xl:col-span-2"/>
       </CustomContainer>
     </motion.section>
   )

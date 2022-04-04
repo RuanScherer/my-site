@@ -1,6 +1,6 @@
-export const MediumCard = () => {
+export const MediumCard = ({ className }) => {
   return (
-    <div className="flex flex-col items-center justify-center col-span-3 xl:col-span-2 rounded-2xl p-5 m-auto border shadow-xl text-center transform hover:shadow-lg hover:translate-y-1 transition transition-250">
+    <div className={"flex flex-col items-center justify-center rounded-2xl p-5 m-auto border shadow-xl text-center transform hover:shadow-lg hover:translate-y-1 transition transition-250 " + className}>
       <div
         className="w-20 md:w-24 xl:w-28 h-20 md:h-24 xl:h-28 mb-6 bg-cover bg-center rounded-full"
         style={{ backgroundImage: "url(/images/medium-photo.jpeg)" }}
