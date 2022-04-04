@@ -41,7 +41,7 @@ export const AchievementsSection = () => {
         </ul>
 
         <button 
-          className="md:hidden text-gray-200 text-base md:text-lg xl:text-xl font-medium shadow-lg rounded-full px-4 py-1 transform transition hover:translate-y-1 hover:shadow-md"
+          className="md:hidden text-gray-200 text-base font-medium shadow-lg rounded-full px-4 py-1 transform transition hover:translate-y-1 hover:shadow-md"
           style={{ backgroundColor: "var(--dark-blue-900)" }}
           onClick={handleToggleSeeMore}
         >
