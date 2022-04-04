@@ -235,7 +235,7 @@ export const socialLinks = [
     image: 'github.svg'
   },
   {
-    href: "/documents/Ruan-Scherer.pdf",
+    href: "/documents/Ruan Vitor Scherer - Resume.docx",
     title: "Resume",
     image: 'document.png'
   }
