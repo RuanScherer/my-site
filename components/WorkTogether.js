@@ -8,7 +8,7 @@ const WorkTogether = () => {
     <motion.section className="pt-24" {...opacityAnimation}>
       <CustomContainer>
         <div 
-          className="mx-auto space-y-4 rounded-xl shadow-xl p-5 md:p-6 xl:p-8 transform hover:-translate-y-1 transition transition-250"
+          className="mx-auto space-y-4 rounded-xl shadow-xl p-5 md:p-6 xl:p-8 transform hover:translate-y-1 transition duration-200"
           style={{
             backgroundColor: "var(--blue-900)",
             width: "fit-content"

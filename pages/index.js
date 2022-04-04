@@ -9,6 +9,7 @@ import { OverviewAboutMe } from "../components/OverviewAboutMe"
 import { SkillsSection } from "../components/SkillsSection"
 import { AchievementsSection } from "../components/AchievementsSection"
 import { RecommendationsSection } from "../components/RecommendationsSection"
+import { ExtrasSection } from "../components/ExtrasSection"
 
 export default function Home() {
   return (
@@ -25,7 +26,9 @@ export default function Home() {
 
       <AchievementsSection />
 
-      <motion.section {...opacityAnimation} id="projects" className="pt-52 space-y-12 flex flex-col">
+      <ExtrasSection />
+
+      {/* <motion.section {...opacityAnimation} id="projects" className="pt-52 space-y-12 flex flex-col">
         <h1 className="text-center text-3xl md:text-4xl font-extrabold relative w-full ">
           Meus Projetos
           <br/>
@@ -53,7 +56,7 @@ export default function Home() {
             )
           )}
         </ul>
-      </motion.section>
+      </motion.section> */}
 
       <WorkTogether/>
     </>

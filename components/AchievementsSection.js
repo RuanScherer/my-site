@@ -29,7 +29,7 @@ export const AchievementsSection = () => {
           Click to turn the cards
         </h3>
 
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-medium list-none w-full">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-medium list-none w-full mb-8">
           { awardsAndRecongition.map(item => (
             <AchievementCard
               title={item.title}
@@ -41,7 +41,7 @@ export const AchievementsSection = () => {
         </ul>
 
         <button 
-          className="md:hidden text-gray-200 text-base md:text-lg xl:text-xl font-medium shadow-lg rounded-full px-4 py-1 transform transition hover:translate-y-1 hover:shadow-md hover:bg-gray-50"
+          className="md:hidden text-gray-200 text-base md:text-lg xl:text-xl font-medium shadow-lg rounded-full px-4 py-1 transform transition hover:translate-y-1 hover:shadow-md"
           style={{ backgroundColor: "var(--dark-blue-900)" }}
           onClick={handleToggleSeeMore}
         >
