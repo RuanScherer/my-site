@@ -13,7 +13,7 @@ export const RecommendationsSection = () => {
     >
       <CustomContainer className="flex flex-col items-stretch">
         <h2 className="text-2xl md:text-3xl xl:text-4xl text-center font-extrabold">
-          What people say about me
+          What <span style={{ color: "var(--blue-900)" }}>people say</span> about me
         </h2>
         <h3 className="text-sm md:text-base xl:text-lg text-gray-500 text-center font-medium">
           Swipe to see more

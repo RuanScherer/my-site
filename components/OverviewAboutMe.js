@@ -13,7 +13,7 @@ export const OverviewAboutMe = () => {
       <CustomContainer className="grid grid-cols-1 md:grid-cols-6 gap-8 md:gap-10">
         <div className="col-span-3 xl:col-span-4 m-auto">
           <h1 className="mb-4 text-2xl md:text-3xl xl:text-4xl font-extrabold">
-            About me
+            About <span style={{ color: "var(--blue-900)" }}>me</span>
           </h1>
 
           <div className="flex flex-col gap-4 md:gap-6 md:text-lg xl:text-xl leading-relaxed font-medium text-justify">

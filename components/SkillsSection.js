@@ -8,7 +8,7 @@ export const SkillsSection = () => {
     <motion.section id="skills" {...opacityAnimation}>
       <CustomContainer className="pt-32 flex flex-col items-center">
         <h2 className="mb-6 text-2xl md:text-3xl xl:text-4xl font-extrabold">
-          My main skills
+          My main <span style={{ color: "var(--blue-900)" }}>skills</span>
         </h2>
 
         <ul className="flex flex-wrap items-center justify-center gap-2 md:w-3/4 xl:w-4/6 font-bold text-lg md:text-xl list-none">

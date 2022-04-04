@@ -8,7 +8,7 @@ export const ExtrasSection = () => {
       <CustomContainer className="pt-32 grid grid-cols-1 md:grid-cols-6 gap-8 md:gap-10">
         <div className="col-span-3 xl:col-span-4 m-auto">
           <h2 className="mb-6 text-2xl md:text-3xl xl:text-4xl font-extrabold">
-            Some extras...
+            Some <span style={{ color: "var(--blue-900)" }}>extras...</span>
           </h2>
 
           <p className="md:text-lg xl:text-xl leading-relaxed font-medium text-justify">
