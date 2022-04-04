@@ -17,7 +17,7 @@ export const CanHelpYouSection = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-center">
-          <article className="flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-lg">
+          <article className="flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-xl transform hover:shadow-lg hover:translate-y-1 transition duration-200">
             <div
               className="flex items-center justify-center p-3 mx-auto rounded-full"
               style={{ backgroundColor: "#00ed64" }}
@@ -28,7 +28,7 @@ export const CanHelpYouSection = () => {
             <p className="text-base md:text-lg mt-1">Building robust and scalable RESTful APIs.</p>
           </article>
 
-          <article className="flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-lg">
+          <article className="flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-xl transform hover:shadow-lg hover:translate-y-1 transition duration-200">
             <div
               className="flex items-center justify-center p-3 mx-auto rounded-full"
               style={{ backgroundColor: "#f7df1e" }}
@@ -39,7 +39,7 @@ export const CanHelpYouSection = () => {
             <p className="text-base md:text-lg mt-1">Developing beautiful, functional and user-friendly interfaces.</p>
           </article>
 
-          <article className="flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-lg">
+          <article className="flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-xl transform hover:shadow-lg hover:translate-y-1 transition duration-200">
             <div
               className="flex items-center justify-center p-3 mx-auto rounded-full"
               style={{ backgroundColor: "#13b9fd" }}
