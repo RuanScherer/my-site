@@ -15,3 +15,11 @@ html {
 .fit-content {
   width: fit-content;
 }
+
+.bg-dark-blue-900 {
+  background-color: var(--dark-blue-900);
+}
+
+.text-gray-100 {
+  color: var(--gray-100);
+}

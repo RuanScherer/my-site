@@ -6,19 +6,17 @@ export const ExperienceBanner = () => {
   return (
     <motion.section
       id="where-i-worked"
-      className="shadow-xl"
-      style={{ backgroundColor: "var(--dark-blue-900)" }}
+      className="shadow-xl bg-dark-blue-900"
       {...opacityAnimation}
     >
       <CustomContainer className="py-10 md:py-12 lg:py-14 xl:py-16">
         <h2
-          className="flex items-center justify-center mb-8 text-3xl md:text-4xl xl:text-5xl font-semibold"
-          style={{ color: "var(--gray-100)" }}
+          className="flex items-center justify-center mb-8 text-3xl md:text-4xl xl:text-5xl font-semibold text-gray-100"
         >
           02+
           <span
-            className="ml-2 text-sm md:text-base xl:text-lg text-left"
-            style={{ color: "var(--gray-100)", lineHeight: 1 }}
+            className="ml-2 text-sm md:text-base xl:text-lg text-left text-gray-100"
+            style={{ lineHeight: 1 }}
           >
             years of
             <br/>

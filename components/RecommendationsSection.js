@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import Slider from "react-slick"
 import { CustomContainer } from "../components/CustomContainer"
+import { Recommendation } from "../components/Recommendation"
 import { recommendations } from "../data/"
 import { opacityAnimation } from "../constants"
 
@@ -26,18 +27,12 @@ export const RecommendationsSection = () => {
           arrows={false}
         >
           { recommendations.map((recommendation, index) => (
-            <div key={index} className="px-2">
-              <div className="p-6 rounded-xl text-center" style={{ backgroundColor: "#9FA5F644" }}>
-                <img 
-                  className="w-5 md:w-6 xl:w-8 mx-auto mb-2"
-                  src="/images/quote.svg" 
-                  alt="Quote"
-                />
-                <h2 className="text-lg md:text-xl xl:text-2xl font-bold">{recommendation.name}</h2>
-                <span className="text-sm md:text-base xl:text-lg font-semibold">{recommendation.role}</span>
-                <p className="text-sm md:text-base xl:text-lg font-medium leading-relaxed mt-4">{recommendation.content}</p>
-              </div>
-            </div>
+            <Recommendation
+              key={index}
+              name={recommendation.name}
+              role={recommendation.role}
+              content={recommendation.content}
+            />
           ))}
         </Slider>
       </CustomContainer>

@@ -17,9 +17,11 @@ export const OverviewAboutMe = () => {
           </h1>
 
           <div className="flex flex-col gap-4 md:gap-6 md:text-lg xl:text-xl leading-relaxed font-medium text-justify">
-            <p>{about[0]}</p>
-            <p>{about[1]}</p>
-            <p>{about[2]}</p>
+            {about.map((paragraph, index) => (
+              <p key={index}>
+                {paragraph}
+              </p>
+            ))}
           </div>
         </div>
 

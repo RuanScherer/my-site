@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { IoServer, IoLaptopOutline, IoPhonePortraitOutline } from "react-icons/io5"
 import { CustomContainer } from "../components/CustomContainer"
 import { opacityAnimation } from '../constants'
+import { EnvironmentCard } from "./EnvironmentCard"
 
 export const CanHelpYouSection = () => {
   return (
@@ -17,38 +18,26 @@ export const CanHelpYouSection = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-center">
-          <article className="flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-xl transform hover:shadow-lg hover:translate-y-1 transition duration-200">
-            <div
-              className="flex items-center justify-center p-3 mx-auto rounded-full"
-              style={{ backgroundColor: "#00ed64" }}
-            >
-              <IoServer size="25" />
-            </div>
-            <h3 className="text-lg md:text-xl leading-5 font-bold mt-4">Backend development</h3>
-            <p className="text-base md:text-lg mt-1">Building robust and scalable RESTful APIs.</p>
-          </article>
+          <EnvironmentCard
+            icon={IoServer}
+            iconBackgroundColor="#00ed64"
+            name="Backend development"
+            description="Building robust and scalable RESTful APIs."
+          />
 
-          <article className="flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-xl transform hover:shadow-lg hover:translate-y-1 transition duration-200">
-            <div
-              className="flex items-center justify-center p-3 mx-auto rounded-full"
-              style={{ backgroundColor: "#f7df1e" }}
-            >
-              <IoLaptopOutline size="25" />
-            </div>
-            <h3 className="text-lg md:text-xl leading-5 font-bold mt-4">Frontend development</h3>
-            <p className="text-base md:text-lg mt-1">Developing beautiful, functional and user-friendly interfaces.</p>
-          </article>
+          <EnvironmentCard
+            icon={IoLaptopOutline}
+            iconBackgroundColor="#f7df1e"
+            name="Frontend development"
+            description="Developing beautiful, functional and user-friendly interfaces."
+          />
 
-          <article className="flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-xl transform hover:shadow-lg hover:translate-y-1 transition duration-200">
-            <div
-              className="flex items-center justify-center p-3 mx-auto rounded-full"
-              style={{ backgroundColor: "#13b9fd" }}
-            >
-              <IoPhonePortraitOutline size="25" />
-            </div>
-            <h3 className="text-lg md:text-xl leading-5 font-bold mt-4">Mobile development</h3>
-            <p className="text-base md:text-lg mt-1">Creating solutions available everywhere for mobile devices.</p>
-          </article>
+          <EnvironmentCard
+            icon={IoPhonePortraitOutline}
+            iconBackgroundColor="#13b9fd"
+            name="Mobile development"
+            description="Creating solutions available everywhere for mobile devices."
+          />
         </div>
       </CustomContainer>
     </motion.section>
