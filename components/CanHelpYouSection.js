@@ -13,7 +13,7 @@ export const CanHelpYouSection = () => {
       {...opacityAnimation}
     >
       <CustomContainer className="py-10 md:py-12 lg:py-14 xl:py-16">
-        <h2 className="flex items-center justify-center mb-8 text-2xl md:text-3xl xl:text-4xl font-bold">
+        <h2 className="flex items-center justify-center mb-8 text-2xl md:text-3xl xl:text-4xl font-extrabold">
           I can help you with
         </h2>
 

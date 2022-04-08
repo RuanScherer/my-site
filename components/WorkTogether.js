@@ -8,17 +8,13 @@ const WorkTogether = () => {
     <motion.section className="pt-24" {...opacityAnimation}>
       <CustomContainer>
         <div 
-          className="mx-auto space-y-4 rounded-xl shadow-xl p-5 md:p-6 xl:p-8 transform hover:translate-y-1 transition duration-200"
-          style={{
-            backgroundColor: "var(--blue-900)",
-            width: "fit-content"
-          }}
+          className="bg-blue-900 fit-content space-y-4 rounded-xl shadow-xl mx-auto p-5 md:p-6 xl:p-8 transform hover:translate-y-1 transition duration-200"
         >
           <h1 className="text-2xl md:text-3xl xl:text-4xl text-center text-white font-extrabold">
             Want to build something nice?
           </h1>
 
-          <div className="space-y-4 md:space-y-2" style={{ color: "var(--gray-100)" }}>
+          <div className="space-y-4 md:space-y-2 text-gray-100">
             <p className="text-base md:text-lg xl:text-xl text-center text-gray-100 leading-relaxed font-medium">
               I like so much to work with people who share the same passion: technology.
             </p>

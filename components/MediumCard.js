@@ -17,8 +17,7 @@ export const MediumCard = ({ className }) => {
       <a
         href="https://medium.com/@ruan.vscherer"
         target="_blank"
-        className="text-gray-200 text-base md:text-lg font-medium font-medium shadow-lg rounded-full px-4 py-1 duration-200 hover:opacity-90"
-        style={{ backgroundColor: "var(--dark-blue-900)" }}
+        className="text-gray-200 text-base md:text-lg font-medium font-medium bg-dark-blue-900 shadow-lg rounded-full px-4 py-1 duration-200 hover:opacity-90"
       >
         Go to Ruan's Medium
       </a>

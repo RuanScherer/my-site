@@ -25,18 +25,18 @@ export const WelcomeSection = () => {
         />
 
         <h2 className="bg-white text-lg md:text-xl xl:text-2xl mt-2">
-          Hi, I'm <span className="font-bold" style={{ color: "var(--blue-900)" }}>Ruan</span>!
+          Hi, I'm <span className="font-bold text-blue-900">Ruan</span>!
         </h2>
 
         <h1 className="bg-white mt-2 mb-8 text-center text-3xl md:text-4xl xl:text-5xl font-semibold">
           I can help you to build
           <br/>
-          <span className="font-bold" style={{ color: "var(--blue-900)" }}>
+          <span className="font-bold text-blue-900">
             amazing modern software.
           </span>
         </h1>
         
-        <i className="bg-white mt-4 text-md lg:text-lg xl:text-xl font-medium text-center" style={{ color: "var(--gray-100)" }}>
+        <i className="bg-white mt-4 text-md lg:text-lg xl:text-xl font-medium text-center text-gray-100">
           {'<Senior Fullstack Developer/>'}
         </i>
 

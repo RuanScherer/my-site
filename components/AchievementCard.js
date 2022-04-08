@@ -16,8 +16,8 @@ export const AchievementCard = ({ title, subtitle, content, className }) => {
       containerClassName={"w-full " + className}
     >
       <div
-        className="flex flex-col items-stretch justify-center p-5 h-56 rounded-xl shadow-xl text-center cursor-pointer"
-        style={{ backgroundColor: "var(--dark-blue-900)", color: "#9fa5f6" }}
+        className="flex flex-col items-stretch justify-center p-5 h-56 rounded-xl shadow-xl text-center cursor-pointer bg-dark-blue-900"
+        style={{ color: "#9fa5f6" }}
         onClick={handleFlip}
       >
         <h4 className="text-xl md:text-2xl xl:text-3xl text-white">{title}</h4>

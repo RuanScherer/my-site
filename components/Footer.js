@@ -10,8 +10,7 @@ const Footer = () => {
 
   return (
     <motion.footer
-      className="py-10 mt-16"
-      style={{ backgroundColor: "var(--dark-blue-900)" }}
+      className="py-10 mt-16 bg-dark-blue-900"
       {...opacityAnimation}
     >
       <CustomContainer className="flex flex-col items-center space-y-5">
