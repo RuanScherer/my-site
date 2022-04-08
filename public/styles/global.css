@@ -25,7 +25,7 @@ html {
 }
 
 .text-gray-100 {
-  color: var(--gray-100);
+  color: var(--gray-100) !important;
 }
 
 .text-blue-900 {
