@@ -14,12 +14,12 @@ const WorkTogether = () => {
             Want to build something nice?
           </h1>
 
-          <div className="space-y-4 md:space-y-2 text-gray-100">
-            <p className="text-base md:text-lg xl:text-xl text-center text-gray-100 leading-relaxed font-medium">
+          <div className="space-y-4 md:space-y-2">
+            <p className="text-base md:text-lg xl:text-xl text-center text-gray-50 leading-relaxed font-medium">
               I like so much to work with people who share the same passion: technology.
             </p>
 
-            <p className="text-base md:text-lg xl:text-xl text-center text-gray-100 leading-relaxed font-medium">
+            <p className="text-base md:text-lg xl:text-xl text-center text-gray-50 leading-relaxed font-medium">
               Are you one of those people?
               <Link href="https://wa.link/tgjlij">
                 <a className="font-bold hover:opacity-80 transition">
