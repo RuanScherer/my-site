@@ -15,7 +15,7 @@ export default function AboutMe() {
       }}
       {...opacityAnimation}
     >
-      <CustomContainer className="min-h-screen flex flex-col items-stretch justify-between space-y-16 py-10">
+      <CustomContainer id="main" className="min-h-screen flex flex-col items-stretch justify-between space-y-16 py-10">
         <Link href="/">
           <a className="mr-auto flex items-center gap-1 text-sm sm:text-lg font-semibold cursor-pointer hover:-translate-x-2 transition transform">
             <IoArrowBackOutline stroke="#0C0A1F" className="w-4 lg:w-5 h-4 lg:h-5" />
@@ -34,8 +34,8 @@ export default function AboutMe() {
         </div>
 
         <div className="flex flex-col items-center">
-          <BiMouse className="w-6 lg:w-8 h-6 lg:h-8 -mb-2" color="#0C0A1F" />
-          <BiChevronDown className="w-6 lg:w-8 h-6 lg:h-8" color="#0C0A1F" />
+          <BiMouse className="w-7 lg:w-8 h-7 lg:h-8 -mb-2" color="#0C0A1F" />
+          <BiChevronDown className="w-7 lg:w-8 h-7 lg:h-8" color="#0C0A1F" />
         </div>
       </CustomContainer>
     </motion.section>
