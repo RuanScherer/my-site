@@ -34,7 +34,7 @@ const Header = () => {
 
         <nav className="hidden md:flex flex-wrap space-x-6 text-lg font-semibold">
           { menuLinks.map(link => (
-            <Link href={`#${link.href}`}>
+            <Link href={`#${link.href}`} key={link.href}>
               <a className="hover:opacity-70 transition duration-200">
                 {link.name}
               </a>

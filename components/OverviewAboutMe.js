@@ -1,3 +1,5 @@
+import Link from "next/link"
+import { IoArrowForwardOutline } from "react-icons/io5"
 import { motion } from 'framer-motion'
 import { CustomContainer } from "../components/CustomContainer"
 import { about } from '../data/'
@@ -22,6 +24,13 @@ export const OverviewAboutMe = () => {
                 {paragraph}
               </p>
             ))}
+
+            <Link href="/about-me">
+              <a className="flex items-center mr-auto gap-2 text-blue-900 text-lg font-extrabold transition hover:opacity-70">
+                Know more about me
+                <IoArrowForwardOutline stroke="#150DFB" />
+              </a>
+            </Link>
           </div>
         </div>
 

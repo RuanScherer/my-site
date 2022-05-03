@@ -1,8 +1,4 @@
-import Link from "next/link"
 import WorkTogether from '../components/WorkTogether'
-import { projects, recommendations } from '../data/'
-import { motion } from 'framer-motion'
-import { opacityAnimation } from '../constants'
 import { WelcomeSection } from "../components/WelcomeSection"
 import { ExperienceBanner } from "../components/ExperienceBanner"
 import { OverviewAboutMe } from "../components/OverviewAboutMe"
