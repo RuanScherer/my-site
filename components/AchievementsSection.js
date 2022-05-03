@@ -30,12 +30,13 @@ export const AchievementsSection = () => {
         </h3>
 
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-medium list-none w-full mb-8">
-          { awardsAndRecongition.map(item => (
+          { awardsAndRecongition.map((item, index) => (
             <AchievementCard
               title={item.title}
               subtitle={item.institution}
               content={item.content}
               className={`${(!seeMore && item.hidden) && 'hidden'} md:block`}
+              key={index}
             />
           ))}
         </ul>
