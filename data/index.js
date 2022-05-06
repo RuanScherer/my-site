@@ -37,6 +37,17 @@ export const about = [
   `
 ]
 
+export const detailedAbout = [
+  [
+    "I had interest in playing sports since I was just a boy. Since there, I have played some different sports such as soccer, volleyball, chess (I don't know if it's really a sport) and karate, but the only one I still play is soccer.",
+    "I started to like playing soccer because of my father and I never stopped playing it. Now, I play with him, my friends and my brother.",
+    "But talking about karate, I trained competitively for a long time (I think that approximately 7 years) and I was good at it. I was awarded in several championships, from municipal to national. I stopped trainning karate because I have no more free time for it.",
+  ],
+  [
+    "Just like sports, music was always a passion for me. If you start playing a music I like, make sure I will start singing."
+  ]
+]
+
 export const skills = [
   {
     name: 'Node.js',

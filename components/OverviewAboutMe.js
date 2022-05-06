@@ -26,7 +26,7 @@ export const OverviewAboutMe = () => {
             ))}
 
             <Link href="/about-me">
-              <a className="flex items-center mr-auto gap-2 text-blue-900 text-lg font-extrabold transition hover:opacity-70">
+              <a className="flex items-center mr-auto gap-2 text-blue-900 text-lg font-extrabold transition transform hover:translate-x-1 hover:opacity-70">
                 Know more about me
                 <IoArrowForwardOutline stroke="#150DFB" />
               </a>
