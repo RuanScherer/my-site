@@ -44,7 +44,9 @@ export const detailedAbout = [
     "But talking about karate, I trained competitively for a long time (I think that approximately 7 years) and I was good at it. I was awarded in several championships, from municipal to national. I stopped trainning karate because I have no more free time for it.",
   ],
   [
-    "Just like sports, music was always a passion for me. If you start playing a music I like, make sure I will start singing."
+    "Just like sports, music was always a passion for me, it really makes me happier. If you start playing a music I like, make sure I will start singing.",
+    "I started to play guitar when I was a teenager and I was good at it. I played a lot with my friends and on the church for a long time.",
+    "Not only guitar, but other instruments interest me too. I like drums, bass and other instruments that I would like to learn how to play some day."
   ]
 ]
 

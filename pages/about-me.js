@@ -10,6 +10,7 @@ export default function AboutMe() {
   return (
     <>
       <motion.main
+        id="main"
         style={{
           backgroundImage: "url('/images/me-presentation.svg')",
           backgroundSize: "cover",
@@ -17,7 +18,7 @@ export default function AboutMe() {
         }}
         {...opacityAnimation}
       >
-        <CustomContainer id="main" className="min-h-screen flex flex-col items-stretch justify-between space-y-16 py-10">
+        <CustomContainer className="min-h-screen flex flex-col items-stretch justify-between space-y-16 py-10">
           <Link href="/">
             <a className="mr-auto flex items-center gap-1 text-sm sm:text-lg font-semibold cursor-pointer hover:-translate-x-2 transition transform">
               <IoArrowBackOutline stroke="#0C0A1F" className="w-4 lg:w-5 h-4 lg:h-5" />
@@ -49,7 +50,7 @@ export default function AboutMe() {
         So, I am...
       </motion.h3>
 
-      <motion.section className="my-32" {...opacityAnimation}>
+      <motion.section className="my-24" {...opacityAnimation}>
         <CustomContainer className="grid grid-cols-1 md:grid-cols-6 gap-8 md:gap-10">
           <div className="col-span-3 xl:col-span-4 m-auto">
             <h4 className="mb-4 text-2xl md:text-3xl xl:text-4xl font-extrabold">
@@ -67,9 +68,33 @@ export default function AboutMe() {
 
           <img
             src="/images/me-karate.jpeg"
-            alt="Me in home office"
+            alt="Me in a karate championship"
             className="col-span-3 xl:col-span-2 rounded-2xl m-auto shadow-xl"
           />
+        </CustomContainer>
+      </motion.section>
+
+      <motion.section className="my-24" {...opacityAnimation}>
+        <CustomContainer className="grid grid-cols-1 md:grid-cols-6 gap-8 md:gap-10">
+          <img
+            src="/images/me-guitar.jpeg"
+            alt="Me playing guitar"
+            className="col-span-3 xl:col-span-2 rounded-2xl m-auto shadow-xl"
+          />
+
+          <div className="col-span-3 xl:col-span-4 m-auto">
+            <h4 className="mb-4 text-2xl md:text-3xl xl:text-4xl font-extrabold">
+              a <span className="text-blue-900">musician</span>
+            </h4>
+
+            <div className="flex flex-col gap-4 md:gap-6 md:text-lg xl:text-xl leading-relaxed font-medium text-justify">
+              {detailedAbout[1].map((paragraph, index) => (
+                <p key={index}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
         </CustomContainer>
       </motion.section>
     </>
