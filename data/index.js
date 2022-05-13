@@ -45,7 +45,7 @@ export const detailedAbout = [
   ],
   [
     "Just like sports, music was always a passion for me, it really makes me happier. If you start playing a music I like, make sure I will start singing.",
-    "I started to play guitar when I was a teenager and I was good at it. I played a lot with my friends and on the church for a long time.",
+    "I started to play guitar when I was a teenager and I was good at it. I played a lot with my friends and at church for a long time.",
     "Not only guitar, but other instruments interest me too. I like drums, bass and other instruments that I would like to learn how to play some day."
   ],
   [
