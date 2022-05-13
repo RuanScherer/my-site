@@ -79,10 +79,10 @@ export default function AboutMe() {
           <img
             src="/images/me-guitar.jpeg"
             alt="Me playing guitar"
-            className="col-span-3 xl:col-span-2 rounded-2xl m-auto shadow-xl"
+            className="order-last md:order-1 col-span-3 xl:col-span-2 rounded-2xl m-auto shadow-xl"
           />
 
-          <div className="col-span-3 xl:col-span-4 m-auto">
+          <div className="md:order-2 col-span-3 xl:col-span-4 m-auto">
             <h4 className="mb-4 text-2xl md:text-3xl xl:text-4xl font-extrabold">
               a <span className="text-blue-900">musician</span>
             </h4>
