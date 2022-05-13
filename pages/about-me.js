@@ -121,6 +121,19 @@ export default function AboutMe() {
           />
         </CustomContainer>
       </motion.section>
+
+      <motion.h3
+        className="w-full my-20 text-xl md:text-2xl xl:text-3xl font-extrabold text-center"
+        {...opacityAnimation}
+      >
+        ...and much more!
+        {' '}
+        <a href="https://wa.link/tgjlij" target="_blank" className="text-blue-900 pointer hover:opacity-75 transition">
+          Chat me
+        </a>
+        {' '}
+        and let's talk!
+      </motion.h3>
     </>
   )
 }
