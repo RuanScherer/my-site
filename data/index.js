@@ -107,27 +107,6 @@ export const skills = [
   }
 ]
 
-// export const jobs = [
-//   {
-//     image: "philips.svg",
-//     name: "Philips",
-//     role: "Programador Full Stack",
-//     content: "Iniciei em março de 2020 como estagiário e fui efetivado em outubro do mesmo ano. Esse é meu emprego atual, eu ajudo as pessoas desenvolvendo um sistema para a área da saúde usando Javascript, Java, Delphi e PL/SQL."
-//   },
-//   {
-//     image: "autoaprova.svg",
-//     name: "AutoAprova",
-//     role: "Programador Web Full Stack",
-//     content: "Trabalhei no AutoAprova temporariamente (3 meses) como freelancer desenvolvendo uma plataforma web para financiamento de veículos usando tecnologias como Adonis.js, React e MongoDB."
-//   },
-//   {
-//     image: "logo.svg",
-//     name: "Freelance",
-//     role: "Programador Full Stack Web",
-//     content: "Antes de começar a trabalhar em qualquer empresa eu desenvolvi alguns websites para comércios pequenos com finalidade de obter experiência. É um trabalho que gosto muito e ainda venho fazendo quando surgem oportunidades.",
-//   }
-// ]
-
 export const projects = [
   {
     id: "konectando",
@@ -285,6 +264,15 @@ export const recommendations = [
     role: "Tests Analyst at Philips",
     content: `
       I worked with Ruan on a data protection law project, besides being a great programmer, Ruan is always concerned with helping us to create a better quality product together.
+    `
+  },
+  {
+    name: "Rodrigo Dalpiaz",
+    role: "Squad Leader at Paytrack",
+    content: `
+    Ruan is a dedicated professional who surprises me for always being up to date with technology.
+    Always active in the communities, he likes to study about the technical part, and also about issues of processes and work organization.
+    He is constantly evolving, especially in Frontend, which is one of its strengths.
     `
   }
 ]
