@@ -29,6 +29,11 @@ export const ExperienceBanner = () => {
             className="w-32 md:w-36 xl:w-40"
           />
           <img
+            src="/images/happy-logo.svg"
+            alt="Happy logo"
+            className="w-32 md:w-36 xl:w-40"
+          />
+          <img
             src="/images/philips.svg"
             alt="Philips logo"
             className="w-32 md:w-36 xl:w-40"

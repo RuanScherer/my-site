@@ -1,7 +1,7 @@
-import { motion } from "framer-motion"
-import { CustomContainer } from "../components/CustomContainer"
-import { opacityAnimation } from '../constants'
-import { SkillChip } from "./SkillChip"
+import { motion } from "framer-motion";
+import { CustomContainer } from "../components/CustomContainer";
+import { opacityAnimation } from "../constants";
+import { SkillChip } from "./SkillChip";
 
 export const SkillsSection = () => {
   return (
@@ -23,18 +23,20 @@ export const SkillsSection = () => {
           <SkillChip skillName="Spring" backgroundColor="#7fe96e" />
           <SkillChip skillName="Oracle Database" backgroundColor="#f74e28" />
           <SkillChip skillName="MySQL" backgroundColor="#13b9fd" />
-          <SkillChip skillName="MongoDB" backgroundColor="#00ed64" />
+          <SkillChip skillName="NoSQL" backgroundColor="#00ed64" />
           <SkillChip skillName="Git" backgroundColor="#f74e28" />
-          <SkillChip skillName="Agile Methodologies" backgroundColor="#f7df1e" />
+          <SkillChip
+            skillName="Agile Methodologies"
+            backgroundColor="#f7df1e"
+          />
           <SkillChip skillName="Contiuous learning" backgroundColor="#7fe96e" />
           <SkillChip skillName="Good communication" backgroundColor="#61dafb" />
           <SkillChip skillName="Teamwork" backgroundColor="#c4cccf" />
           <SkillChip skillName="Design patterns" backgroundColor="#f74e28" />
           <SkillChip skillName="REST & SOAP" backgroundColor="#00ed64" />
           <SkillChip skillName="Unit tests" backgroundColor="#61dafb" />
-          <SkillChip skillName="CI" backgroundColor="#c4cccf" />
         </ul>
       </CustomContainer>
     </motion.section>
-  )
-}
+  );
+};
